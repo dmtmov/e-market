@@ -3,5 +3,111 @@
 @import'global';
 @import'reset';
 
+.header {
+	&__inner {
+		display: flex;
+		justify-content: space-between;
+		padding: 60px 0;
+	}
+}
+
+.logo {
+	transition: box-shadow 0.7s ease-in-out, opacity 0.5s ease;
+
+	&:hover {
+		opacity: 0.7;
+	}
+
+	&:focus {
+		box-shadow: 0 0 0px 2px $active;
+		border-radius: 5px;
+	}
+
+	&:active {
+		opacity: 0.5;
+	}
+}
+
+.menu {
+	display: flex;
+
+	&__list {
+		margin-right: 63px;
+		display: flex;
+	}
+
+	&__item:not(:last-child) {
+		margin-right: 45px;
+	}
+
+	&__link {
+		font-size: 18px;
+		line-height: 2.1;
+		color: $default;
+	}
+}
+
+.user__list {
+	display: flex;
+}
+
+.user__item:not(:last-child) {
+	margin-right: 10px;
+}
+
+
+.user__btn {
+	position: relative;
+	padding: 13px;
+	border: none;
+	width: 44px;
+	height: 44px;
+	background-color: $globai;
+	background-repeat: no-repeat;
+	background-position: center center;
+	transition: box-shadow 0.5s ease-in-out, background-color, color;
+
+	&:hover {
+		background-color: $active;
+		border-radius: 5px;
+	}
+
+	&:focus {
+		box-shadow: 0 0 0 2px rgba(255, 104, 56, 0.7);
+		border-radius: 5px;
+		background-color: rgba(255, 122, 80, 0.1);
+	}
+
+	&:active {
+		box-shadow: 0 0 0 2px rgba(255, 104, 56, 0.7);
+		border-radius: none;
+		outline: none;
+	}
+
+}
+
+.user__num:hover {
+	background-color: #fff;
+	color: $active;
+}
+
+.user__num {
+	position: absolute;
+	align-items: center;
+	width: 14px;
+	height: 14px;
+	font-size: 10px;
+	line-height: 1.4em;
+	top: 9px;
+	right: 2px;
+	color: $acccent;
+	border-radius: 50px;
+	background-color: $active;
+}
+
+
+
+
+
 
 @import'media';
