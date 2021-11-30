@@ -3,14 +3,6 @@
 @import'global';
 @import'reset';
 
-.header {
-	&__inner {
-		display: flex;
-		justify-content: space-between;
-		padding: 60px 0;
-	}
-}
-
 .logo {
 	transition: box-shadow 0.7s ease-in-out, opacity 0.5s ease;
 
@@ -30,6 +22,9 @@
 
 .menu {
 	display: flex;
+	justify-content: flex-end;
+	margin: 0 auto;
+	padding: 60px 0;
 
 	&__list {
 		margin-right: 63px;
@@ -63,8 +58,7 @@
 	height: 44px;
 	background-color: $globai;
 	background-repeat: no-repeat;
-	background-position: center center;
-	transition: box-shadow 0.5s ease-in-out, background-color, color;
+	transition: box-shadow 0.5s ease-in-out, background-color 0.8s ease, color 0.8s ease;
 
 	&:hover {
 		background-color: $active;
@@ -115,8 +109,8 @@
 }
 
 .primary__title {
-	@extend %quicksand-700;
-	font-weight: 700;
+	@extend %quicksand-500;
+	font-weight: 500;
 	color: $title;
 	font-size: 66px;
 	line-height: 1.3;
@@ -128,8 +122,6 @@
 }
 
 .primary__text {
-	@extend %quicksand-500;
-	font-weight: 500;
 	margin-bottom: 20px;
 }
 
@@ -138,7 +130,6 @@
 	padding: 13px 32px;
 	font-size: 18px;
 	letter-spacing: 0.03em;
-
 }
 
 .primary__image {
@@ -154,8 +145,9 @@
 }
 
 .popular__filter {
-	display: flex;
 	justify-content: start;
+	display: flex;
+	margin-bottom: 45px;
 }
 
 .popular__item:not(:last-child) {
@@ -163,14 +155,22 @@
 }
 
 .popular__btn {
-	background-repeat: no-repeat;
-	background-position: left 30px center;
+	display: flex;
+	position: relative;
 	padding: 22px 32px 22px 86px;
-	margin-bottom: 45px;
 	border-radius: 5px;
+	line-height: 1.3;
+	background-repeat: no-repeat;
 	background-color: $acccent;
 	box-shadow: 0 0 0 1px $shadow;
 	transition: box-shadow 0.2s ease-in-out, text-decoration linear 0.5s, opacity 0.7s ease;
+}
+
+
+.icon__btn {
+	position: absolute;
+	top: 10px;
+	left: 32px;
 }
 
 .popular__btn:hover {
@@ -188,6 +188,10 @@
 .popular__btn:active {
 	background-color: $acccent;
 	box-shadow: inset 0 -5px 12px rgba(255, 104, 56, 0.2);
+}
+
+.popular__btn:active {
+	background-color: #000;
 }
 
 .popular__inner {
@@ -214,7 +218,7 @@
 }
 
 .popular__img {
-	max-width: 140px;
+	width: 140px;
 	margin: 0 auto;
 }
 
@@ -228,47 +232,38 @@
 
 .popular__price {
 	display: block;
-	@extend %quicksand-700;
-	font-weight: 700;
+	@extend %quicksand-500;
+	font-weight: 500;
 	font-size: 15px;
 	line-height: 1.4;
 	color: $title;
 	margin-bottom: 10px;
 }
 
-.popular__link {
+.popular__info {
 	border-bottom: 1px solid $title;
 	display: inline-block;
-	line-height: 0.95em;
+	line-height: 0.80em;
 }
 
 .footer__inner {
 	display: flex;
 	justify-content: start;
-	margin-bottom: 100px;
+	margin-bottom: 30px;
+	border-bottom: 1px solid #C2C2C2;
 }
 
 .footer__content {
+	max-width: 200px;
 	margin-right: 70px;
 }
 
-.footer__button {
-	position: relative;
-	padding: 13px 40px 13px 70px;
+.footer__logo {
+	display: block;
+	margin-bottom: 30px;
 }
 
-.footer__button::before {
-	content: " ";
-	position: absolute;
-	width: 16px;
-	height: 16px;
-	top: 13px;
-	left: 40px;
-	background-image: url('../images/social.icons/teleg.svg');
-	background-repeat: no-repeat;
-}
-
-.footer__email {
+.form__input {
 	width: 200px;
 	padding: 13px 15px;
 	font-size: 13px;
@@ -282,11 +277,80 @@
 	transition: box-shadow 0.5s ease-in-out, opacity 0.5s ease;
 }
 
+.form__input:hover::placeholder {
+	color: $title;
+}
+
+.form__input:focus {
+	background: #FFFFFF;
+	box-shadow: 0 0 0 2px #FF6838;
+}
+
+.form__button {
+	display: flex;
+	position: relative;
+	width: 200px;
+	padding: 13px 40px 13px 70px;
+	margin-bottom: 70px;
+}
+
+.form__telegram {
+	position: absolute;
+	top: 15px;
+	left: 35px;
+}
+
 .footer__item {
+	max-width: 187px;
+}
+
+.footer__item:not(:last-child) {
 	margin-right: 70px;
 }
 
-.footer__link {
+.footer__list {
 	font-size: 18px;
 	line-height: 1.3;
+	letter-spacing: 0.01em;
+	font-weight: 400;
+	padding-bottom: 20px;
+}
+
+.footer__link--icon {
+	width: 20px;
+	height: 20px;
+	padding-left: 25px;
+	background-repeat: no-repeat;
+	background-position: center left;
+}
+
+.footer__link--location {
+	background-image: url('../images/footer.icons/Location.svg');
+	width: 15px;
+}
+
+.footer__link--tel {
+	background-image: url('../images/footer.icons/tel.svg');
+	width: 20px;
+}
+
+.footer__link--message {
+	background-image: url('../images/footer.icons/message.svg');
+	width: 24px;
+	height: 24px;
+}
+
+.social {
+	display: flex;
+
+	&__item {
+		padding-right: 13px;
+	}
+}
+
+.footer__copy {
+	text-align: center;
+	margin-bottom: 30px;
+	font-size: 14px;
+	line-height: 14px;
 }
