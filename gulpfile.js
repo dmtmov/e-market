@@ -43,6 +43,7 @@ function styles() {
 function scripts() {
 	return src([
 			'node_modules/jquery/dist/jquery.js',
+			'node_modules/mixitup/dist/mixitup.min.js',
 			'app/js/main.js'
 		])
 		.pipe(concat('main.min.js'))
@@ -95,6 +96,7 @@ function watching() {
 	watch(['app/**/*.js', '!app/js/main.min.js'], scripts);
 	watch(['app/**/*.html']).on('change', browserSync.reload);
 }
+
 
 
 exports.styles = styles;
