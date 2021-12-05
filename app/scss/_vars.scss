@@ -1,29 +1,22 @@
-$active:#ff6838;
+$orange:#ff6838;
 $default:#31352B;
 $title:#363853;
-$globai:#F9FAFF;
-$acccent:#FFFFFF;
+$white:#FFFFFF;
 $shadow :#ECECEC;
 $gray:#c2c2c2;
 $silver:#F9FAFF;
 
 
-%quicksand-700 {
-	font-family: 'Rubik', sans-serif;
-	font-weight: 700;
+
+%position {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
-%quicksand-300 {
-	font-family: 'Rubik', sans-serif;
-	font-weight: 300;
-}
+%background {
+	background-position: top center;
+	background-repeat: no-repeat;
+	block-size: center;
 
-%quicksand-500 {
-	font-family: 'Rubik', sans-serif;
-	font-weight: 500;
-}
-
-%quicksand-400 {
-	font-family: 'Rubik', sans-serif;
-	font-weight: 400;
 }

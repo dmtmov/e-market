@@ -1,10 +1,10 @@
 @font-face {
 	font-family: 'Rubik';
-	font-weight: 700;
-	font-style: normal;
-	src: local('Rubik-Bold'),
-		url('../fonts/Rubik-Bold.woff2')format('woff2'),
-		url('../fonts/Rubik-Bold.woff')format('woff');
+	font-weight: 400;
+	font-style: italic;
+	src: local('Rubik-Regular'),
+		url('../fonts/Rubik-Regular.woff2')format('woff2'),
+		url('../fonts/Rubik-Regular.woff')format('woff');
 	font-display: swap;
 }
 
