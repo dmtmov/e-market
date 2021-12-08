@@ -18,57 +18,59 @@
 				<a class="logo" href="#">
 					<img class="logo__img" src="images/icons/logo.svg" width="200" height="40" alt="Логотип">
 				</a>
-				<ul class="menu__list">
-					<li class="menu__item">
-						<a class="menu__link active animation-text" href="#">
-							Главная
-						</a>
-					</li>
-					<li class="menu__item">
-						<a class="menu__link animation-text" href="#">
-							Блюда
-						</a>
-					</li>
-					<li class="menu__item">
-						<a class="menu__link animation-text" href="#">
-							Контакты
-						</a>
-					</li>
-				</ul>
-				<ul class="user__list">
-					<li class="user__item">
-						<button class="user__btn" type="button">
-							<svg class="search" width="21" height="22" viewBox="0 0 21 22" fill="none"
-								xmlns="http://www.w3.org/2000/svg">
-								<ellipse cx="9.76663" cy="10.6301" rx="8.98856" ry="8.88424" stroke="#363853" stroke-width="1.5"
-									stroke-linecap="round" stroke-linejoin="round" />
-								<path d="M16.0184 17.2708L19.5424 20.7448" stroke="#363853" stroke-width="1.5"
-									stroke-linecap="round" stroke-linejoin="round" />
-							</svg>
-							<span class="sr-only">поиск товара</span>
-						</button>
-					</li>
-					<li class="user__item">
-						<button class="user__btn" type="button">
-							<svg class="cart" width="21" height="20" viewBox="0 0 21 20" fill="none"
-								xmlns="http://www.w3.org/2000/svg">
-								<path
-									d="M1 1.17578L3.08 1.5316L4.04301 12.8715C4.12001 13.7976 4.90301 14.5082 5.84301 14.5053H16.752C17.649 14.5072 18.41 13.8549 18.537 12.9772L19.486 6.49532C19.592 5.77083 19.083 5.09872 18.351 4.99395C18.287 4.98505 3.414 4.98011 3.414 4.98011"
-									stroke="#363853" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-								<path d="M12.375 8.63337H15.1479" stroke="#363853" stroke-width="1.5" stroke-linecap="round"
-									stroke-linejoin="round" />
-								<path fill-rule="evenodd" clip-rule="evenodd"
-									d="M5.4043 17.9316C5.70527 17.9316 5.94824 18.1729 5.94824 18.4696C5.94824 18.7673 5.70527 19.0085 5.4043 19.0085C5.10333 19.0085 4.86035 18.7673 4.86035 18.4696C4.86035 18.1729 5.10333 17.9316 5.4043 17.9316Z"
-									stroke="#363853" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-								<path fill-rule="evenodd" clip-rule="evenodd"
-									d="M16.6846 17.9316C16.9856 17.9316 17.2296 18.1729 17.2296 18.4696C17.2296 18.7673 16.9856 19.0085 16.6846 19.0085C16.3836 19.0085 16.1406 18.7673 16.1406 18.4696C16.1406 18.1729 16.3836 17.9316 16.6846 17.9316Z"
-									stroke="#363853" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-							</svg>
-							<span class="user__num">4</span>
-							<span class="sr-only">добавить в корзину </span>
-						</button>
-					</li>
-				</ul>
+				<div class="menu__wrapper">
+					<ul class="menu__list">
+						<li class="menu__item">
+							<a class="menu__link active animation-text" href="#">
+								Главная
+							</a>
+						</li>
+						<li class="menu__item">
+							<a class="menu__link animation-text" href="#">
+								Блюда
+							</a>
+						</li>
+						<li class="menu__item">
+							<a class="menu__link animation-text" href="#">
+								Контакты
+							</a>
+						</li>
+					</ul>
+					<ul class="user">
+						<li class="user__item">
+							<button class="user__btn" type="button">
+								<svg class="search" width="21" height="22" viewBox="0 0 21 22" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<ellipse cx="9.76663" cy="10.6301" rx="8.98856" ry="8.88424" stroke="#363853"
+										stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+									<path d="M16.0184 17.2708L19.5424 20.7448" stroke="#363853" stroke-width="1.5"
+										stroke-linecap="round" stroke-linejoin="round" />
+								</svg>
+								<span class="sr-only">поиск товара</span>
+							</button>
+						</li>
+						<li class="user__item">
+							<button class="user__btn" type="button">
+								<svg class="cart" width="21" height="20" viewBox="0 0 21 20" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M1 1.17578L3.08 1.5316L4.04301 12.8715C4.12001 13.7976 4.90301 14.5082 5.84301 14.5053H16.752C17.649 14.5072 18.41 13.8549 18.537 12.9772L19.486 6.49532C19.592 5.77083 19.083 5.09872 18.351 4.99395C18.287 4.98505 3.414 4.98011 3.414 4.98011"
+										stroke="#363853" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+									<path d="M12.375 8.63337H15.1479" stroke="#363853" stroke-width="1.5" stroke-linecap="round"
+										stroke-linejoin="round" />
+									<path fill-rule="evenodd" clip-rule="evenodd"
+										d="M5.4043 17.9316C5.70527 17.9316 5.94824 18.1729 5.94824 18.4696C5.94824 18.7673 5.70527 19.0085 5.4043 19.0085C5.10333 19.0085 4.86035 18.7673 4.86035 18.4696C4.86035 18.1729 5.10333 17.9316 5.4043 17.9316Z"
+										stroke="#363853" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+									<path fill-rule="evenodd" clip-rule="evenodd"
+										d="M16.6846 17.9316C16.9856 17.9316 17.2296 18.1729 17.2296 18.4696C17.2296 18.7673 16.9856 19.0085 16.6846 19.0085C16.3836 19.0085 16.1406 18.7673 16.1406 18.4696C16.1406 18.1729 16.3836 17.9316 16.6846 17.9316Z"
+										stroke="#363853" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+								</svg>
+								<span class="user__num">4</span>
+								<span class="sr-only">добавить в корзину </span>
+							</button>
+						</li>
+					</ul>
+				</div>
 			</nav>
 		</div>
 	</header>
@@ -184,7 +186,9 @@
 										<rect width="44" height="44" fill="white" />
 									</clipPath>
 								</defs>
-							</svg>Сендвичи</button>
+							</svg>
+							Сендвичи
+						</button>
 					</li>
 					<li class="popular__item">
 						<button class="popular__btn" data-filter=".asia" type="button">
@@ -365,14 +369,14 @@
 			</div>
 		</section>
 
-		<section class="delivery section">
+		<section class="delivery">
 			<div class="container">
 				<div class="delivery__inner">
 					<div class="delivery__image">
 						<img class="delivery__img" src="images/delivery/delivery.png" alt="">
 					</div>
 					<div class="delivery__content">
-						<h2 class="delivery__title title">Оставайтесь дома,
+						<h2 class="delivery__title title">Оставайтесь дома,<br>
 							а мы позаботимся о еде</h2>
 						<div class="delivery__text">
 							<p>У нас есть вкусная еда и мы готовы доставить её к вам домой! Воспользуйтесь нашей доставкой
@@ -383,111 +387,163 @@
 							<li class="delivery__item delivery__item-moto">Вежливые курьеры</li>
 							<li class="delivery__item delivery__item-resturent">Более 500 заведений</li>
 						</ul>
-						<button class="button" type="button">Подробнее</button>
+						<button class="delivery__button button " type="button">Подробнее</button>
 					</div>
 				</div>
 			</div>
 		</section>
 
-		<!-- <section class="restaurants section">
+		<section class="restaurants section">
 			<div class="container">
 				<div class="restaurants__inner">
-					<h2 class="title">Лучшие рестораны</h2>
+					<h2 class="restaurants__title title">Лучшие рестораны</h2>
 					<ul class="restaurants__items">
-						<li class="restaurant__item">
-							<img class="restaurant" src="images/restaurants/blaze-pizza.jpg" alt="">
-							<h3 class="restaurant__name">Blaze Pizza</h3>
-							<div class="restaurant__info">
-								<span class="restaurant__time"></span>
-								<button class="button" type="button">
-									<svg width="14" height="13" viewBox="0 0 14 13" fill="none"
-										xmlns="http://www.w3.org/2000/svg">
-										<path
-											d="M8.121 0.293C7.93353 0.480528 7.82821 0.734836 7.82821 1C7.82821 1.26516 7.93353 1.51947 8.121 1.707L11.413 5L1 5.007C0.734784 5.007 0.48043 5.11236 0.292893 5.29989C0.105357 5.48743 0 5.74178 0 6.007C0 6.27222 0.105357 6.52657 0.292893 6.71411C0.48043 6.90164 0.734784 7.007 1 7.007L11.414 7L8.121 10.293C8.02549 10.3852 7.94931 10.4956 7.8969 10.6176C7.84449 10.7396 7.8169 10.8708 7.81575 11.0036C7.8146 11.1364 7.8399 11.2681 7.89018 11.391C7.94046 11.5138 8.01471 11.6255 8.10861 11.7194C8.2025 11.8133 8.31415 11.8875 8.43705 11.9378C8.55994 11.9881 8.69162 12.0134 8.8244 12.0123C8.95718 12.0111 9.0884 11.9835 9.2104 11.9311C9.33241 11.8787 9.44275 11.8025 9.535 11.707L13.121 8.122C13.3996 7.84342 13.6207 7.51268 13.7715 7.14867C13.9222 6.78466 13.9999 6.39451 13.9999 6.0005C13.9999 5.60649 13.9222 5.21634 13.7715 4.85233C13.6207 4.48832 13.3996 4.15758 13.121 3.879L9.535 0.293C9.34747 0.105529 9.09316 0.000213623 8.828 0.000213623C8.56284 0.000213623 8.30853 0.105529 8.121 0.293Z"
-											fill="white" />
-									</svg></button>
-							</div>
+						<li class="restaurants__item">
+							<article class="product-item">
+								<img class="product-item__img" src="images/restaurants/blaze-pizza.jpg" alt="Пицца Блейз">
+								<div class="product-item__wrapper">
+									<h3 class="product-item__name">Blaze Pizza</h3>
+									<div class="product-item__info">
+										<time class="product-item__time">11:00 - 22:00</time>
+										<button class="product-item__button button" type="button">
+											<svg width="14" height="13" viewBox="0 0 14 13" fill="none"
+												xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M8.121 0.293C7.93353 0.480528 7.82821 0.734836 7.82821 1C7.82821 1.26516 7.93353 1.51947 8.121 1.707L11.413 5L1 5.007C0.734784 5.007 0.48043 5.11236 0.292893 5.29989C0.105357 5.48743 0 5.74178 0 6.007C0 6.27222 0.105357 6.52657 0.292893 6.71411C0.48043 6.90164 0.734784 7.007 1 7.007L11.414 7L8.121 10.293C8.02549 10.3852 7.94931 10.4956 7.8969 10.6176C7.84449 10.7396 7.8169 10.8708 7.81575 11.0036C7.8146 11.1364 7.8399 11.2681 7.89018 11.391C7.94046 11.5138 8.01471 11.6255 8.10861 11.7194C8.2025 11.8133 8.31415 11.8875 8.43705 11.9378C8.55994 11.9881 8.69162 12.0134 8.8244 12.0123C8.95718 12.0111 9.0884 11.9835 9.2104 11.9311C9.33241 11.8787 9.44275 11.8025 9.535 11.707L13.121 8.122C13.3996 7.84342 13.6207 7.51268 13.7715 7.14867C13.9222 6.78466 13.9999 6.39451 13.9999 6.0005C13.9999 5.60649 13.9222 5.21634 13.7715 4.85233C13.6207 4.48832 13.3996 4.15758 13.121 3.879L9.535 0.293C9.34747 0.105529 9.09316 0.000213623 8.828 0.000213623C8.56284 0.000213623 8.30853 0.105529 8.121 0.293Z"
+													fill="white" />
+											</svg>
+										</button>
+									</div>
+								</div>
+							</article>
+						</li>
+						<li class="restaurants__item">
+							<article class="product-item">
+								<img class="product-item__img" src="images/restaurants/pizza-runcho.jpg" alt="Пицца Рунчо">
+								<div class="product-item__wrapper">
+									<h3 class="product-item__name">Pizza Runcho</h3>
+									<div class="product-item__info">
+										<time class="product-item__time" datetime="12:00 - 21:00">12:00 - 21:00</time>
+										<button class="product-item__button button" button type="button">
+											<svg width="14" height="13" viewBox="0 0 14 13" fill="none"
+												xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M8.121 0.293C7.93353 0.480528 7.82821 0.734836 7.82821 1C7.82821 1.26516 7.93353 1.51947 8.121 1.707L11.413 5L1 5.007C0.734784 5.007 0.48043 5.11236 0.292893 5.29989C0.105357 5.48743 0 5.74178 0 6.007C0 6.27222 0.105357 6.52657 0.292893 6.71411C0.48043 6.90164 0.734784 7.007 1 7.007L11.414 7L8.121 10.293C8.02549 10.3852 7.94931 10.4956 7.8969 10.6176C7.84449 10.7396 7.8169 10.8708 7.81575 11.0036C7.8146 11.1364 7.8399 11.2681 7.89018 11.391C7.94046 11.5138 8.01471 11.6255 8.10861 11.7194C8.2025 11.8133 8.31415 11.8875 8.43705 11.9378C8.55994 11.9881 8.69162 12.0134 8.8244 12.0123C8.95718 12.0111 9.0884 11.9835 9.2104 11.9311C9.33241 11.8787 9.44275 11.8025 9.535 11.707L13.121 8.122C13.3996 7.84342 13.6207 7.51268 13.7715 7.14867C13.9222 6.78466 13.9999 6.39451 13.9999 6.0005C13.9999 5.60649 13.9222 5.21634 13.7715 4.85233C13.6207 4.48832 13.3996 4.15758 13.121 3.879L9.535 0.293C9.34747 0.105529 9.09316 0.000213623 8.828 0.000213623C8.56284 0.000213623 8.30853 0.105529 8.121 0.293Z"
+													fill="white" />
+											</svg>
+										</button>
+									</div>
+								</div>
+							</article>
 						</li>
 						<li class="restaurant__item">
-							<img class="restaurant" src="images/restaurants/pizza-runcho.jpg" alt="">
-							<h3 class="restaurant__name">Pizza Runcho</h3>
-							<div class="restaurant__info">
-								<span class="restaurant__time"></span>
-								<button class="button" type="button">
-									<svg width="14" height="13" viewBox="0 0 14 13" fill="none"
-										xmlns="http://www.w3.org/2000/svg">
-										<path
-											d="M8.121 0.293C7.93353 0.480528 7.82821 0.734836 7.82821 1C7.82821 1.26516 7.93353 1.51947 8.121 1.707L11.413 5L1 5.007C0.734784 5.007 0.48043 5.11236 0.292893 5.29989C0.105357 5.48743 0 5.74178 0 6.007C0 6.27222 0.105357 6.52657 0.292893 6.71411C0.48043 6.90164 0.734784 7.007 1 7.007L11.414 7L8.121 10.293C8.02549 10.3852 7.94931 10.4956 7.8969 10.6176C7.84449 10.7396 7.8169 10.8708 7.81575 11.0036C7.8146 11.1364 7.8399 11.2681 7.89018 11.391C7.94046 11.5138 8.01471 11.6255 8.10861 11.7194C8.2025 11.8133 8.31415 11.8875 8.43705 11.9378C8.55994 11.9881 8.69162 12.0134 8.8244 12.0123C8.95718 12.0111 9.0884 11.9835 9.2104 11.9311C9.33241 11.8787 9.44275 11.8025 9.535 11.707L13.121 8.122C13.3996 7.84342 13.6207 7.51268 13.7715 7.14867C13.9222 6.78466 13.9999 6.39451 13.9999 6.0005C13.9999 5.60649 13.9222 5.21634 13.7715 4.85233C13.6207 4.48832 13.3996 4.15758 13.121 3.879L9.535 0.293C9.34747 0.105529 9.09316 0.000213623 8.828 0.000213623C8.56284 0.000213623 8.30853 0.105529 8.121 0.293Z"
-											fill="white" />
-									</svg></button>
-							</div>
+							<article class="product-item">
+								<img class="product-item__img" src="images/restaurants/pizza-hut.jpg" alt="Пицца Хат">
+								<div class="product-item__wrapper">
+									<h3 class="product-item__name">Pizza Hut</h3>
+									<div class="product-item__info">
+										<time class="product-item__time">11:00 - 22:00</time>
+										<button class="product-item__button button" type="button">
+											<svg width="14" height="13" viewBox="0 0 14 13" fill="none"
+												xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M8.121 0.293C7.93353 0.480528 7.82821 0.734836 7.82821 1C7.82821 1.26516 7.93353 1.51947 8.121 1.707L11.413 5L1 5.007C0.734784 5.007 0.48043 5.11236 0.292893 5.29989C0.105357 5.48743 0 5.74178 0 6.007C0 6.27222 0.105357 6.52657 0.292893 6.71411C0.48043 6.90164 0.734784 7.007 1 7.007L11.414 7L8.121 10.293C8.02549 10.3852 7.94931 10.4956 7.8969 10.6176C7.84449 10.7396 7.8169 10.8708 7.81575 11.0036C7.8146 11.1364 7.8399 11.2681 7.89018 11.391C7.94046 11.5138 8.01471 11.6255 8.10861 11.7194C8.2025 11.8133 8.31415 11.8875 8.43705 11.9378C8.55994 11.9881 8.69162 12.0134 8.8244 12.0123C8.95718 12.0111 9.0884 11.9835 9.2104 11.9311C9.33241 11.8787 9.44275 11.8025 9.535 11.707L13.121 8.122C13.3996 7.84342 13.6207 7.51268 13.7715 7.14867C13.9222 6.78466 13.9999 6.39451 13.9999 6.0005C13.9999 5.60649 13.9222 5.21634 13.7715 4.85233C13.6207 4.48832 13.3996 4.15758 13.121 3.879L9.535 0.293C9.34747 0.105529 9.09316 0.000213623 8.828 0.000213623C8.56284 0.000213623 8.30853 0.105529 8.121 0.293Z"
+													fill="white" />
+											</svg>
+										</button>
+									</div>
+								</div>
+							</article>
 						</li>
 						<li class="restaurant__item">
-							<img class="restaurant" src="images/restaurants/pizza-hut.jpg" alt="">
-							<h3 class="restaurant__name">Pizza Hut</h3>
-							<div class="restaurant__info">
-								<span class="restaurant__time"></span>
-								<button class="button" type="button">
-									<svg width="14" height="13" viewBox="0 0 14 13" fill="none"
-										xmlns="http://www.w3.org/2000/svg">
-										<path
-											d="M8.121 0.293C7.93353 0.480528 7.82821 0.734836 7.82821 1C7.82821 1.26516 7.93353 1.51947 8.121 1.707L11.413 5L1 5.007C0.734784 5.007 0.48043 5.11236 0.292893 5.29989C0.105357 5.48743 0 5.74178 0 6.007C0 6.27222 0.105357 6.52657 0.292893 6.71411C0.48043 6.90164 0.734784 7.007 1 7.007L11.414 7L8.121 10.293C8.02549 10.3852 7.94931 10.4956 7.8969 10.6176C7.84449 10.7396 7.8169 10.8708 7.81575 11.0036C7.8146 11.1364 7.8399 11.2681 7.89018 11.391C7.94046 11.5138 8.01471 11.6255 8.10861 11.7194C8.2025 11.8133 8.31415 11.8875 8.43705 11.9378C8.55994 11.9881 8.69162 12.0134 8.8244 12.0123C8.95718 12.0111 9.0884 11.9835 9.2104 11.9311C9.33241 11.8787 9.44275 11.8025 9.535 11.707L13.121 8.122C13.3996 7.84342 13.6207 7.51268 13.7715 7.14867C13.9222 6.78466 13.9999 6.39451 13.9999 6.0005C13.9999 5.60649 13.9222 5.21634 13.7715 4.85233C13.6207 4.48832 13.3996 4.15758 13.121 3.879L9.535 0.293C9.34747 0.105529 9.09316 0.000213623 8.828 0.000213623C8.56284 0.000213623 8.30853 0.105529 8.121 0.293Z"
-											fill="white" />
-									</svg></button>
-							</div>
+							<article class="product-item">
+								<img class="product-item__img" src="images/restaurants/McDonald`s.jpg" alt="Макдональдс">
+								<div class="product-item__wrapper">
+									<h3 class="product-item__name">McDonald`s</h3>
+									<div class="product-item__info">
+										<time class="product-item__time">06:00 - 23:00</time>
+										<button class="product-item__button button" type="button">
+											<svg width="14" height="13" viewBox="0 0 14 13" fill="none"
+												xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M8.121 0.293C7.93353 0.480528 7.82821 0.734836 7.82821 1C7.82821 1.26516 7.93353 1.51947 8.121 1.707L11.413 5L1 5.007C0.734784 5.007 0.48043 5.11236 0.292893 5.29989C0.105357 5.48743 0 5.74178 0 6.007C0 6.27222 0.105357 6.52657 0.292893 6.71411C0.48043 6.90164 0.734784 7.007 1 7.007L11.414 7L8.121 10.293C8.02549 10.3852 7.94931 10.4956 7.8969 10.6176C7.84449 10.7396 7.8169 10.8708 7.81575 11.0036C7.8146 11.1364 7.8399 11.2681 7.89018 11.391C7.94046 11.5138 8.01471 11.6255 8.10861 11.7194C8.2025 11.8133 8.31415 11.8875 8.43705 11.9378C8.55994 11.9881 8.69162 12.0134 8.8244 12.0123C8.95718 12.0111 9.0884 11.9835 9.2104 11.9311C9.33241 11.8787 9.44275 11.8025 9.535 11.707L13.121 8.122C13.3996 7.84342 13.6207 7.51268 13.7715 7.14867C13.9222 6.78466 13.9999 6.39451 13.9999 6.0005C13.9999 5.60649 13.9222 5.21634 13.7715 4.85233C13.6207 4.48832 13.3996 4.15758 13.121 3.879L9.535 0.293C9.34747 0.105529 9.09316 0.000213623 8.828 0.000213623C8.56284 0.000213623 8.30853 0.105529 8.121 0.293Z"
+													fill="white" />
+											</svg>
+										</button>
+									</div>
+								</div>
+							</article>
 						</li>
 						<li class="restaurant__item">
-							<img class="restaurant" src="images/restaurants/McDonald`s.jpg" alt="">
-							<h3 class="restaurant__name">McDonald`s</h3>
-							<div class="restaurant__info">
-								<span class="restaurant__time"></span>
-								<button class="button" type="button">
-									<svg width="14" height="13" viewBox="0 0 14 13" fill="none"
-										xmlns="http://www.w3.org/2000/svg">
-										<path
-											d="M8.121 0.293C7.93353 0.480528 7.82821 0.734836 7.82821 1C7.82821 1.26516 7.93353 1.51947 8.121 1.707L11.413 5L1 5.007C0.734784 5.007 0.48043 5.11236 0.292893 5.29989C0.105357 5.48743 0 5.74178 0 6.007C0 6.27222 0.105357 6.52657 0.292893 6.71411C0.48043 6.90164 0.734784 7.007 1 7.007L11.414 7L8.121 10.293C8.02549 10.3852 7.94931 10.4956 7.8969 10.6176C7.84449 10.7396 7.8169 10.8708 7.81575 11.0036C7.8146 11.1364 7.8399 11.2681 7.89018 11.391C7.94046 11.5138 8.01471 11.6255 8.10861 11.7194C8.2025 11.8133 8.31415 11.8875 8.43705 11.9378C8.55994 11.9881 8.69162 12.0134 8.8244 12.0123C8.95718 12.0111 9.0884 11.9835 9.2104 11.9311C9.33241 11.8787 9.44275 11.8025 9.535 11.707L13.121 8.122C13.3996 7.84342 13.6207 7.51268 13.7715 7.14867C13.9222 6.78466 13.9999 6.39451 13.9999 6.0005C13.9999 5.60649 13.9222 5.21634 13.7715 4.85233C13.6207 4.48832 13.3996 4.15758 13.121 3.879L9.535 0.293C9.34747 0.105529 9.09316 0.000213623 8.828 0.000213623C8.56284 0.000213623 8.30853 0.105529 8.121 0.293Z"
-											fill="white" />
-									</svg></button>
-							</div>
+							<article class="product-item">
+								<img class="product-item__img" src="images/restaurants/KFC.jpg" alt="КФК">
+								<div class="product-item__wrapper">
+									<h3 class="product-item__name">KFC</h3>
+									<div class="product-item__info">
+										<time class="product-item__time">06:00 - 23:00</time>
+										<button class="product-item__button button" type="button">
+											<svg width="14" height="13" viewBox="0 0 14 13" fill="none"
+												xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M8.121 0.293C7.93353 0.480528 7.82821 0.734836 7.82821 1C7.82821 1.26516 7.93353 1.51947 8.121 1.707L11.413 5L1 5.007C0.734784 5.007 0.48043 5.11236 0.292893 5.29989C0.105357 5.48743 0 5.74178 0 6.007C0 6.27222 0.105357 6.52657 0.292893 6.71411C0.48043 6.90164 0.734784 7.007 1 7.007L11.414 7L8.121 10.293C8.02549 10.3852 7.94931 10.4956 7.8969 10.6176C7.84449 10.7396 7.8169 10.8708 7.81575 11.0036C7.8146 11.1364 7.8399 11.2681 7.89018 11.391C7.94046 11.5138 8.01471 11.6255 8.10861 11.7194C8.2025 11.8133 8.31415 11.8875 8.43705 11.9378C8.55994 11.9881 8.69162 12.0134 8.8244 12.0123C8.95718 12.0111 9.0884 11.9835 9.2104 11.9311C9.33241 11.8787 9.44275 11.8025 9.535 11.707L13.121 8.122C13.3996 7.84342 13.6207 7.51268 13.7715 7.14867C13.9222 6.78466 13.9999 6.39451 13.9999 6.0005C13.9999 5.60649 13.9222 5.21634 13.7715 4.85233C13.6207 4.48832 13.3996 4.15758 13.121 3.879L9.535 0.293C9.34747 0.105529 9.09316 0.000213623 8.828 0.000213623C8.56284 0.000213623 8.30853 0.105529 8.121 0.293Z"
+													fill="white" />
+											</svg>
+										</button>
+									</div>
+								</div>
+							</article>
 						</li>
 						<li class="restaurant__item">
-							<img class="restaurant" src="images/restaurants/KFC.jpg" alt="">
-							<h3 class="restaurant__name">KFC</h3>
-							<div class="restaurant__info">
-								<span class="restaurant__time"></span>
-								<button class="button" type="button">
-									<svg width="14" height="13" viewBox="0 0 14 13" fill="none"
-										xmlns="http://www.w3.org/2000/svg">
-										<path
-											d="M8.121 0.293C7.93353 0.480528 7.82821 0.734836 7.82821 1C7.82821 1.26516 7.93353 1.51947 8.121 1.707L11.413 5L1 5.007C0.734784 5.007 0.48043 5.11236 0.292893 5.29989C0.105357 5.48743 0 5.74178 0 6.007C0 6.27222 0.105357 6.52657 0.292893 6.71411C0.48043 6.90164 0.734784 7.007 1 7.007L11.414 7L8.121 10.293C8.02549 10.3852 7.94931 10.4956 7.8969 10.6176C7.84449 10.7396 7.8169 10.8708 7.81575 11.0036C7.8146 11.1364 7.8399 11.2681 7.89018 11.391C7.94046 11.5138 8.01471 11.6255 8.10861 11.7194C8.2025 11.8133 8.31415 11.8875 8.43705 11.9378C8.55994 11.9881 8.69162 12.0134 8.8244 12.0123C8.95718 12.0111 9.0884 11.9835 9.2104 11.9311C9.33241 11.8787 9.44275 11.8025 9.535 11.707L13.121 8.122C13.3996 7.84342 13.6207 7.51268 13.7715 7.14867C13.9222 6.78466 13.9999 6.39451 13.9999 6.0005C13.9999 5.60649 13.9222 5.21634 13.7715 4.85233C13.6207 4.48832 13.3996 4.15758 13.121 3.879L9.535 0.293C9.34747 0.105529 9.09316 0.000213623 8.828 0.000213623C8.56284 0.000213623 8.30853 0.105529 8.121 0.293Z"
-											fill="white" />
-									</svg></button>
-							</div>
-						</li>
-						<li class="restaurant__item">
-							<img class="restaurant" src="images/restaurants/Star-Burgers.jpg" alt="">
-							<h3 class="restaurant__name">Star Burgers</h3>
-							<div class="restaurant__info">
-								<span class="restaurant__time"></span>
-								<button class="button" type="button">
-									<svg width="14" height="13" viewBox="0 0 14 13" fill="none"
-										xmlns="http://www.w3.org/2000/svg">
-										<path
-											d="M8.121 0.293C7.93353 0.480528 7.82821 0.734836 7.82821 1C7.82821 1.26516 7.93353 1.51947 8.121 1.707L11.413 5L1 5.007C0.734784 5.007 0.48043 5.11236 0.292893 5.29989C0.105357 5.48743 0 5.74178 0 6.007C0 6.27222 0.105357 6.52657 0.292893 6.71411C0.48043 6.90164 0.734784 7.007 1 7.007L11.414 7L8.121 10.293C8.02549 10.3852 7.94931 10.4956 7.8969 10.6176C7.84449 10.7396 7.8169 10.8708 7.81575 11.0036C7.8146 11.1364 7.8399 11.2681 7.89018 11.391C7.94046 11.5138 8.01471 11.6255 8.10861 11.7194C8.2025 11.8133 8.31415 11.8875 8.43705 11.9378C8.55994 11.9881 8.69162 12.0134 8.8244 12.0123C8.95718 12.0111 9.0884 11.9835 9.2104 11.9311C9.33241 11.8787 9.44275 11.8025 9.535 11.707L13.121 8.122C13.3996 7.84342 13.6207 7.51268 13.7715 7.14867C13.9222 6.78466 13.9999 6.39451 13.9999 6.0005C13.9999 5.60649 13.9222 5.21634 13.7715 4.85233C13.6207 4.48832 13.3996 4.15758 13.121 3.879L9.535 0.293C9.34747 0.105529 9.09316 0.000213623 8.828 0.000213623C8.56284 0.000213623 8.30853 0.105529 8.121 0.293Z"
-											fill="white" />
-									</svg></button>
-							</div>
+							<article class="product-item">
+								<img class="product-item__img" src="images/restaurants/Star-Burgers.jpg" alt="Звездные бургеры">
+								<div class="product-item__wrapper">
+									<h3 class="product-item__name">Star Burgers</h3>
+									<div class="product-item__info">
+										<time class="product-item__time">09:00 - 21:00</time>
+										<button class="product-item__button button" type="button">
+											<svg width="14" height="13" viewBox="0 0 14 13" fill="none"
+												xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M8.121 0.293C7.93353 0.480528 7.82821 0.734836 7.82821 1C7.82821 1.26516 7.93353 1.51947 8.121 1.707L11.413 5L1 5.007C0.734784 5.007 0.48043 5.11236 0.292893 5.29989C0.105357 5.48743 0 5.74178 0 6.007C0 6.27222 0.105357 6.52657 0.292893 6.71411C0.48043 6.90164 0.734784 7.007 1 7.007L11.414 7L8.121 10.293C8.02549 10.3852 7.94931 10.4956 7.8969 10.6176C7.84449 10.7396 7.8169 10.8708 7.81575 11.0036C7.8146 11.1364 7.8399 11.2681 7.89018 11.391C7.94046 11.5138 8.01471 11.6255 8.10861 11.7194C8.2025 11.8133 8.31415 11.8875 8.43705 11.9378C8.55994 11.9881 8.69162 12.0134 8.8244 12.0123C8.95718 12.0111 9.0884 11.9835 9.2104 11.9311C9.33241 11.8787 9.44275 11.8025 9.535 11.707L13.121 8.122C13.3996 7.84342 13.6207 7.51268 13.7715 7.14867C13.9222 6.78466 13.9999 6.39451 13.9999 6.0005C13.9999 5.60649 13.9222 5.21634 13.7715 4.85233C13.6207 4.48832 13.3996 4.15758 13.121 3.879L9.535 0.293C9.34747 0.105529 9.09316 0.000213623 8.828 0.000213623C8.56284 0.000213623 8.30853 0.105529 8.121 0.293Z"
+													fill="white" />
+											</svg>
+										</button>
+									</div>
+								</div>
+							</article>
 						</li>
 					</ul>
 				</div>
 			</div>
 		</section>
 
+		<section class="reviews">
+			<div class="container">
+				<div class="reviews slider">
+					<div class="reviews__inner">
+						<!-- <h2 class="reviews__title title">Отзывы клиентов</h2> -->
+						<div class="reviews__img">
+							<img src="images/reviews/reviews-photo.png" alt="Фото Дарьи">
+						</div>
+						<div class="reviews__content">
+							<blockquote class="review__blockquote">
+								SimpleFood - одна из лучших служб доставки продуктов из ресторанов в городе. Очень удобный сайт
+								и
+								приложение. Их доставщики очень вежливы и пунктуальны. Компания часто проводит акции и дарит
+								скидки
+								на доставку - однозначно рекомендую!
+								<cite class="review__name">
+									Дарья
+									<span class="review__text">Ценитель вкусной еды</span>
+								</cite>
+							</blockquote>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
 
-
-
- -->
-</main>
+	</main>
 
 	<footer class="footer">
 		<div class="container">
@@ -506,59 +562,60 @@
 									d="M10.318 14.3001C10.0587 14.3001 9.81928 14.1616 9.70234 13.9406L7.66076 10.0822C7.54864 9.87034 7.5679 9.61684 7.71028 9.42119L11.0058 5.20009L6.53816 8.31359C6.33112 8.44879 6.06285 8.46569 5.83861 8.36039L1.75613 6.43184C1.51125 6.31549 1.36199 6.07304 1.37712 5.81434C1.39156 5.55564 1.56835 5.32944 1.82561 5.24039L14.895 0.690388C15.1461 0.603938 15.4288 0.660488 15.6193 0.840538C15.8092 1.01929 15.8711 1.28709 15.7782 1.52499L10.9632 13.875C10.8683 14.1181 10.6296 14.2851 10.3558 14.2988C10.3434 14.2994 10.3304 14.3001 10.318 14.3001Z"
 									fill="white" />
 							</svg>
-							Подписаться</button>
+							Подписаться
+						</button>
 					</form>
 				</div>
 
 				<ul class="footer__items">
 					<li class="footer__list">
-						<a class="footer__link" href="#">Как это работает</a>
+						<a class="footer__link animation-text" href="#">Как это работает</a>
 					</li>
 					<li class="footer__list">
-						<a class="footer__link" href="#">Продукты</a>
+						<a class="footer__link animation-text" href="#">Продукты</a>
 					</li>
 					<li class="footer__list">
-						<a class="footer__link" href="#">Блюда</a>
+						<a class="footer__link animation-text" href="#">Блюда</a>
 					</li>
 					<li class="footer__list">
-						<a class="footer__link" href="#">Меню</a>
+						<a class="footer__link animation-text" href="#">Меню</a>
 					</li>
 					<li class="footer__list">
-						<a class="footer__link" href="#">О нас</a>
+						<a class="footer__link animation-text" href="#">О нас</a>
 					</li>
 					<li class="footer__list">
-						<a class="footer__link" href="#">Новости</a>
+						<a class="footer__link animation-text" href="#">Новости</a>
 					</li>
 					<li class="footer__list">
-						<a class="footer__link" href="#">Партнеры</a>
+						<a class="footer__link animation-text" href="#">Партнеры</a>
 					</li>
 					<li class="footer__list">
-						<a class="footer__link" href="#">ЧаВо</a>
+						<a class="footer__link animation-text" href="#">ЧаВо</a>
 					</li>
 					<li class="footer__list">
-						<a class="footer__link" href="#">Скачать приложение</a>
+						<a class="footer__link animation-text" href="#">Скачать приложение</a>
 					</li>
 					<li class="footer__list">
-						<a class="footer__link" href="#">Блог</a>
+						<a class="footer__link animation-text" href="#">Блог</a>
 					</li>
 					<li class="footer__list">
-						<a class="footer__link" href="#">Что нового?</a>
+						<a class="footer__link animation-text " href="#">Что нового?</a>
 					</li>
 					<li class="footer__list">
-						<a class="footer__link" href="#">Карта сайта</a>
+						<a class="footer__link animation-text" href="#">Карта сайта</a>
 					</li>
 				</ul>
 
 				<div class="contacts">
 					<ul class="contacts__item">
 						<li class="contacts__list">
-							<a class="contacts__link contacts__link--location" href="#">ул. Смирнова 2/3</a>
+							<a class="contacts__link contacts__link--location animation-text" href="#">ул. Смирнова 2/3</a>
 						</li>
 						<li class="contacts__list">
-							<a class="contacts__link contacts__link--tel" href="#">79068057043</a>
+							<a class="contacts__link contacts__link--tel animation-text" href="#">79068057043</a>
 						</li>
 						<li class="contacts__list">
-							<a class="contacts__link contacts__link--message" href="#">support@sfood.com</a>
+							<a class="contacts__link contacts__link--message animation-text" href="#">support@sfood.com</a>
 						</li>
 					</ul>
 
