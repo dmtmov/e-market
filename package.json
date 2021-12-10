@@ -10,7 +10,8 @@
   "license": "ISC",
   "dependencies": {
     "del": "^6.0.0",
-    "sass": "^1.43.4"
+    "sass": "^1.43.4",
+    "slick-carousel": "^1.8.1"
   },
   "devDependencies": {
     "browser-sync": "^2.27.7",
