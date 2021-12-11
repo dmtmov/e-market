@@ -1,0 +1,66 @@
+.product-item {
+	max-width: 370px;
+	border-radius: 10px;
+	display: block;
+	background-color: $white;
+	box-shadow: 0 3px 3px rgba(0, 0, 0, 0.1);
+
+	&:hover {
+		box-shadow: 0 3px 15px rgba(255, 104, 56, 0.5);
+		border-radius: 10px;
+	}
+
+	&__wrapper {
+		padding: 15px 20px 23px 20px;
+	}
+
+	&__info {
+		@extend %position;
+	}
+
+	&__time {
+		position: relative;
+		font-weight: 300;
+		font-size: 18px;
+		line-height: 30px;
+		padding-left: 30px;
+		$defaultcolor: $default;
+		opacity: 0.9;
+	}
+
+	&__time::before {
+		position: absolute;
+		content: "";
+		width: 22px;
+		height: 22px;
+		top: 2px;
+		left: 0px;
+		background-image: url('../images/product/product-timer.svg');
+		@extend %background;
+	}
+
+	&__name {
+		word-wrap: break-word;
+		font-size: 24px;
+		line-height: 1.3;
+		color: $default;
+		margin-bottom: 20px;
+		font-family: Rubik;
+		font-style: normal;
+		font-weight: 400;
+		text-align: left;
+	}
+
+	&__button {
+		padding: 7px 32px;
+		padding: 9px 32px 6px 32px;
+		border-radius: 20px;
+
+		&:hover,
+		&:focus {
+			svg path {
+				fill: $orange;
+			}
+		}
+	}
+}

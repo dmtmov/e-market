@@ -1,0 +1,77 @@
+.user {
+	display: flex;
+
+	&__item {
+		&:not(:last-child) {
+			margin-right: 10px;
+		}
+	}
+
+	&__btn {
+		position: relative;
+		display: flex;
+		justify-content: center;
+		padding: 11px;
+		border-radius: 6px;
+		background-color: $silver;
+		background-repeat: no-repeat;
+		transition: box-shadow 0.5s ease-in-out, background-color 0.8s ease, color 0.8s ease;
+
+		&:hover {
+			background-color: $orange;
+			border-radius: 5px;
+
+			&:hover {
+				.user__num {
+					background-color: $white;
+					color: $orange;
+				}
+			}
+
+			svg {
+
+				path,
+				ellipse {
+					stroke: $white;
+				}
+			}
+		}
+
+		&:focus {
+			background-color: rgba(255, 122, 80, 0.1);
+			box-shadow: 0 0 0 2px rgba(255, 104, 56, 0.7);
+			border-radius: 5px;
+
+			svg {
+
+				path,
+				ellipse {
+					stroke: $default;
+				}
+			}
+		}
+
+		&:active {
+			border-radius: none;
+			outline: none;
+		}
+	}
+
+	&__num {
+		position: absolute;
+		align-items: center;
+		padding: 2px 4px;
+		font-size: 10px;
+		line-height: 1;
+		top: 4px;
+		left: 23px;
+		color: $white;
+		border-radius: 50%;
+		background-color: $orange;
+
+		&:hover {
+			background-color: $white;
+			color: $orange;
+		}
+	}
+}

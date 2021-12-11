@@ -1,0 +1,46 @@
+.footer {
+	&__inner {
+		display: flex;
+		justify-content: space-evenly;
+	}
+
+	&__content {
+		max-width: 200px;
+		margin-right: 70px;
+	}
+
+	&__logo {
+		display: block;
+		margin-bottom: 30px;
+	}
+
+	&__items {
+		column-count: 3;
+		column-gap: 7px;
+		margin-right: 35px;
+	}
+
+	&__list {
+		font-weight: 400;
+		padding: 8px 5px;
+		font-size: 18px;
+		line-height: 1.3;
+		letter-spacing: 0.01em;
+	}
+
+	&__link {
+		word-wrap: break-word;
+
+		&.active {
+			color: $orange;
+		}
+	}
+
+	&__copy {
+		border-top: 1px solid #C2C2C2;
+		text-align: center;
+		padding-top: 30px;
+		font-size: 14px;
+		line-height: 14px;
+	}
+}

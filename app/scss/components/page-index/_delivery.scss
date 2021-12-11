@@ -1,0 +1,65 @@
+.delivery {
+	&__inner {
+		@extend %position-evenly;
+	}
+
+	&__image {
+		max-width: 100%;
+		margin-right: 50px;
+	}
+
+	&__content {
+		max-width: 470px;
+	}
+
+	&__title {
+		max-width: 470px;
+		margin-bottom: 30px;
+		text-align: left;
+		word-wrap: break-word;
+	}
+
+	&__text {
+		margin-bottom: 30px;
+	}
+
+	&__list {
+		margin-bottom: 30px;
+	}
+
+	&__item {
+		font-size: 24px;
+		padding-left: 65px;
+		position: relative;
+	}
+
+	&__item::before {
+		content: "";
+		position: absolute;
+		left: 0;
+		width: 32px;
+		height: 33px;
+	}
+
+	&__item-timer::before {
+		background-image: url('../images/delivery/delivery-timer.svg');
+		width: 34px;
+	}
+
+	&__item-moto::before {
+		background-image: url('../images/delivery/delivery-moto.svg');
+	}
+
+	&__item-resturent::before {
+		background-image: url('../images/delivery/delivery-resturent.svg');
+	}
+
+	&__item:not(:last-child) {
+		margin-bottom: 20px;
+	}
+
+	.delivery__button {
+		padding: 12px 32px;
+		font-size: 18px;
+	}
+}

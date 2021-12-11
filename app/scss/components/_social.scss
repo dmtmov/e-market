@@ -1,0 +1,55 @@
+.social {
+	display: flex;
+	transition: box-shadow 0.5s ease-in-out, color 0.5s, background-color 0.5s, opacity 0.7s ease;
+
+	&__item {
+		&:not(:last-child) {
+			margin-right: 13px;
+		}
+	}
+
+	&__link {
+		width: 39px;
+		display: block;
+		height: 39px;
+
+		svg {
+			&:hover {
+				circle {
+					fill: $orange;
+				}
+
+				path {
+					fill: $white;
+				}
+			}
+		}
+
+		&:focus {
+			box-shadow: 0 0 0 2px rgba(255, 104, 56, 0.7);
+			border-radius: 50%;
+
+			svg {
+				circle {
+					fill: rgba(255, 122, 80, 0.1);
+				}
+			}
+
+			path {
+				fill: $default;
+			}
+		}
+
+		&:active {
+			svg {
+				circle {
+					fill: rgba(255, 122, 80, 0.1);
+				}
+
+				path {
+					fill: $orange;
+				}
+			}
+		}
+	}
+}

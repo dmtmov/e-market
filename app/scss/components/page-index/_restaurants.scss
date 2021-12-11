@@ -1,0 +1,15 @@
+.restaurants {
+	text-align: center;
+
+	&__title {
+		margin: 0 auto;
+		margin-bottom: 45px;
+		justify-content: center;
+	}
+
+	&__items {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-gap: 22px;
+	}
+}

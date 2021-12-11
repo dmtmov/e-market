@@ -1,0 +1,39 @@
+.mobile-app {
+	padding-top: 135px;
+	padding-bottom: 115px;
+
+	&__inner {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__content {
+		max-width: 540px;
+		display: block;
+		flex-direction: column;
+	}
+
+	&__title {
+		word-wrap: break-word;
+		margin-bottom: 45px;
+	}
+
+	&__text {
+		word-wrap: break-word;
+		margin-bottom: 30px;
+		opacity: 0.9;
+	}
+
+	&__list {
+		display: flex
+	}
+
+	&__link:not(:last-child) {
+		margin-right: 30px;
+	}
+
+	&__img {
+		max-width: 570px;
+	}
+}
