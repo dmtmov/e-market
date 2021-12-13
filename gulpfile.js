@@ -13,8 +13,18 @@ const uglify = require('gulp-uglify');
 const imagemin = require('gulp-imagemin');
 const del = require('del');
 const browserSync = require('browser-sync').create();
-const svgSprite = require('gulp-svg-sprite');
 const fileInclude = require('gulp-file-include');
+
+const svgSprite = require('gulp-svg-sprite');
+const replace = require('gulp-replace');
+const cheerio = require('gulp-cheerio');
+
+
+
+
+
+
+
 
 const htmlInclude = () => {
 	return src(['app/html/*.html'])
@@ -66,18 +76,28 @@ function scripts() {
 		.pipe(browserSync.stream())
 }
 
-function svgSprites() {
-	return src('app/images/icons/*.svg')
-		.pipe(
-			svgSprite({
-				mode: {
-					stack: {
-						sprite: '../sprite.svg',
-					},
-				},
-			})
-		)
-		.pipe(dest('app/images'));
+
+const svgSprites = () => {
+	return src(['app/images/svg/**.svg'])
+		.pipe(cheerio({
+			run: function ($) {
+				$('[fill]').removeAttr('fill');
+				$('[stroke]').removeAttr('stroke');
+				$('[style]').removeAttr('style');
+			},
+			parserOptions: {
+				xmlMode: true
+			}
+		}))
+		.pipe(replace('&gt;', '>'))
+		.pipe(svgSprite({
+			mode: {
+				stack: {
+					strite: "../sprite.svg"
+				}
+			},
+		}))
+		.pipe(dest('app/images/'))
 }
 
 
@@ -124,11 +144,12 @@ function cleanDist() {
 function watching() {
 	watch(['app/scss/**/*.scss'], styles);
 	watch(['app/**/*.js', '!app/js/main.min.js'], scripts);
-	watch(['app/images/icons/*.svg'], svgSprites);
 	watch(['app/**/*.html']).on('change', browserSync.reload);
 	watch(['app/html/**/*.html'], htmlInclude);
 	watch(['app/scss/**/*.scss']).on('change', browserSync.reload);
 
+	watch(['app/images/svg/**.svg'], svgSprites);
+	watch(['app/images/svg/*.svg']).on('change', browserSync.reload);
 }
 
 exports.htmlInclude = htmlInclude;
