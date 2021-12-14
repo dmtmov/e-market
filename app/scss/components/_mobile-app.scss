@@ -1,11 +1,8 @@
 .mobile-app {
-	padding-top: 135px;
-	padding-bottom: 115px;
+	padding: 130px 0 120px;
 
 	&__inner {
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
+		@extend %position;
 	}
 
 	&__content {
@@ -26,14 +23,22 @@
 	}
 
 	&__list {
-		display: flex
+		display: flex;
 	}
 
 	&__link:not(:last-child) {
 		margin-right: 30px;
 	}
 
-	&__img {
-		max-width: 570px;
-	}
+	// &__image {
+	// 	// @extend %object;
+	// 	width: 570px;
+	// 	height: 380px;
+
+	// }
+}
+
+.mobile-app__image {
+	width: 570px;
+	height: 380px;
 }

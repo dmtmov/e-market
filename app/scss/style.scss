@@ -1,6 +1,7 @@
 @import'reset';
-@import'vars';
 @import'fonts';
+@import'vars';
+@import'mixins';
 @import'libs';
 @import'global';
 
@@ -15,9 +16,9 @@
 @import'components/contacts';
 @import'components/form';
 @import'components/social';
-@import'components/slider';
+@import'components/review-slider';
 @import'components/popular';
-@import'components/restaurants';
+@import'components/top-restaurants';
 
 
 @import'page-index/hero';

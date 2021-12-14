@@ -93,7 +93,7 @@ const svgSprites = () => {
 		.pipe(svgSprite({
 			mode: {
 				stack: {
-					strite: "../sprite.svg"
+					sprite: "../sprite.svg"
 				}
 			},
 		}))

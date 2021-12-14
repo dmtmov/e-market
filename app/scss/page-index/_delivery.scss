@@ -4,12 +4,16 @@
 	}
 
 	&__image {
-		max-width: 100%;
+		width: 440px;
+		height: 585px;
 		margin-right: 50px;
+		background-position: center;
+		background-repeat: no-repeat;
 	}
 
 	&__content {
 		max-width: 470px;
+		margin-bottom: 10px;
 	}
 
 	&__title {
@@ -21,6 +25,8 @@
 
 	&__text {
 		margin-bottom: 30px;
+		word-wrap: break-word;
+		@include line-clamp(20, 1.5, 5);
 	}
 
 	&__list {
@@ -41,16 +47,16 @@
 		height: 33px;
 	}
 
-	&__item-timer::before {
+	&__item--timer::before {
 		background-image: url('../images/delivery/delivery-timer.svg');
 		width: 34px;
 	}
 
-	&__item-moto::before {
+	&__item--moto::before {
 		background-image: url('../images/delivery/delivery-moto.svg');
 	}
 
-	&__item-resturent::before {
+	&__item--resturent::before {
 		background-image: url('../images/delivery/delivery-resturent.svg');
 	}
 
@@ -58,7 +64,7 @@
 		margin-bottom: 20px;
 	}
 
-	.delivery__button {
+	&__order {
 		padding: 12px 32px;
 		font-size: 18px;
 	}

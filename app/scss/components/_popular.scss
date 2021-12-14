@@ -75,21 +75,22 @@
 		margin-bottom: 60px;
 	}
 
-	&__items {
-		display: flex;
-		width: 210px;
-		padding: 20px 15px;
-		flex-direction: column;
-		justify-content: space-between;
-		align-items: center;
-		background-color: $white;
-		box-shadow: 0 0 0 1px #ECECEC;
-		border-radius: 5px;
+	// &__items {
+	// 	display: flex;
+	// 	width: 210px;
+	// 	height: 100%;
+	// 	padding: 20px 15px;
+	// 	flex-direction: column;
+	// 	justify-content: space-between;
+	// 	align-items: center;
+	// 	background-color: $white;
+	// 	box-shadow: 0 0 0 1px #ECECEC;
+	// 	border-radius: 5px;
 
-		&:hover {
-			box-shadow: 0 0 0 1px $orange;
-		}
-	}
+	// 	&:hover {
+	// 		box-shadow: 0 0 0 1px $orange;
+	// 	}
+	// }
 
 	&__info {
 		border-bottom: 1px solid $title;

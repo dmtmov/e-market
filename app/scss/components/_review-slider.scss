@@ -1,4 +1,4 @@
-.slider {
+.review-slider {
 	&__inner {
 		max-width: 990px;
 		margin: 0 auto;
@@ -38,8 +38,8 @@
 	}
 
 	.slick-prev {
-		left: 372px;
-		top: 428px;
+		left: 375px;
+		top: 337px;
 		position: absolute;
 	}
 
@@ -92,8 +92,8 @@
 	}
 
 	&__wrapper {
-		display: flex;
-		justify-content: space-between;
+		@extend %position;
+		margin-bottom: 40px;
 	}
 
 	&__title {
@@ -102,15 +102,12 @@
 	}
 
 	&__img {
-		max-height: 300px;
-		max-width: 300px;
-	}
+		width: 300px;
+		height: 300px;
+		padding-right: 40px;
+		border-radius: 50%;
+		@extend %object;
 
-	&__content {
-		padding: 28px 40px 70px 40px;
-		max-width: 650px;
-		@extend %background;
-		background-image: url('../../images/slider/slider-fon.png');
 	}
 
 	&__blockquote {
@@ -120,6 +117,7 @@
 		font-style: italic;
 		color: $default;
 		word-wrap: break-word;
+		margin-right: 40px;
 	}
 
 	&__name {

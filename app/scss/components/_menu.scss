@@ -1,7 +1,5 @@
 .menu {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
+	@extend %position;
 	margin: 0 auto;
 	padding: 60px 0;
 
@@ -27,8 +25,9 @@
 		line-height: 2.1;
 		color: $default;
 
-		&.active {
+		&--home {
 			color: $orange;
 		}
+
 	}
 }

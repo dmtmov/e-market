@@ -8,6 +8,7 @@ $silver:#F9FAFF;
 
 
 
+
 %position {
 	display: flex;
 	justify-content: space-between;
@@ -24,4 +25,9 @@ $silver:#F9FAFF;
 	background-position: top center;
 	background-repeat: no-repeat;
 	background-size: center;
+}
+
+%object {
+	object-fit: cover;
+	background-repeat: no-repeat;
 }
