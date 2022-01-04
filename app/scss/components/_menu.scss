@@ -1,18 +1,8 @@
-.menu {
-	@extend %position;
-	margin: 0 auto;
-	padding: 60px 0;
+.menu__list {
+	margin-right: 52px;
+	display: flex;
+	align-items: center;
 
-	&__wrapper {
-		display: flex;
-		justify-content: space-between;
-	}
-
-	&__list {
-		margin-right: 52px;
-		display: flex;
-		align-items: center;
-	}
 
 	&__item {
 		&:not(:last-child) {
@@ -28,6 +18,5 @@
 		&--home {
 			color: $orange;
 		}
-
 	}
 }

@@ -7,7 +7,9 @@
 				</a>
 
 				<form class="form">
-					<label class="sr-only" for="email">Форма для отправки письма и кнопка для подписи в телеграм</label>
+
+					<label for="email" aria-label="Ваш email"></label>
+
 					<input class="form__input" type="email" name="usermail" id="email" placeholder="Ваш email" required>
 					<button class="form__button button" type="submit">
 						<svg class="form__telegram" width="17" height="16" viewBox="0 0 17 16" fill="none"
@@ -23,7 +25,7 @@
 
 			<ul class="footer__items">
 				<li class="footer__list">
-					<a class="footer__link active animation-text" href="#">Как это работает</a>
+					<a class="footer__link  animation-text" href="#">Как это работает</a>
 				</li>
 				<li class="footer__list">
 					<a class="footer__link animation-text" href="#">Продукты </a>
@@ -59,16 +61,16 @@
 					<a class="footer__link animation-text" href="#">Карта сайта</a>
 				</li>
 			</ul>
-
-			<div class="contacts">
-				<ul class="contacts__item">
-					<li class="contacts__list">
+			<div class="footer__contacts">
+				
+				<ul class="contacts">
+					<li class="contacts__item">
 						<a class="contacts__link contacts__link--location animation-text" href="#">ул. Смирнова 2/3</a>
 					</li>
-					<li class="contacts__list">
+					<li class="contacts__item">
 						<a class="contacts__link contacts__link--tel animation-text" href="#">79068057043</a>
 					</li>
-					<li class="contacts__list">
+					<li class="contacts__item">
 						<a class="contacts__link contacts__link--message animation-text" href="#">support@sfood.com</a>
 					</li>
 				</ul>

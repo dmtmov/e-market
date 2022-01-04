@@ -1,39 +1,35 @@
 .contacts {
-	padding: 0 70px 52px 0;
-	font-size: 16px;
-	line-height: 32px;
+	margin-right: 50px;
 
-	&__list {
-		padding: 5px 5px 8px 5px;
-	}
+	&__item {
+		margin-bottom: 18px;
+		font-size: 16px;
+		line-height: 32px;
 
-	&__list {
 		&:last-child {
 			margin-bottom: 7px;
 		}
 	}
 
 	&__link {
-		width: 20px;
-		height: 20px;
-		padding-left: 30px;
+		width: 30px;
+		height: 30px;
+		padding: 10px 0 19px 40px;
+		margin-bottom: 2px;
 		background-repeat: no-repeat;
 		background-position: center left;
-	}
 
-	&__link--location {
-		background-image: url('../images/footer/footer-location.svg');
-		width: 15px;
-	}
+		&--location {
+			background-image: url('../images/footer/footer-location.svg');
+		}
 
-	&__link--tel {
-		background-image: url('../images/footer/footer-tel.svg');
-		width: 20px;
-	}
+		&--tel {
+			background-image: url('../images/footer/footer-tel.svg');
+		}
 
-	&__link--message {
-		background-image: url('../images/footer/footer-message.svg');
-		width: 24px;
-		height: 24px;
+		&--message {
+			background-image: url('../images/footer/footer-message.svg');
+		}
+
 	}
 }

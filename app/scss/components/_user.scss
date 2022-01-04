@@ -1,5 +1,20 @@
 .user {
 	display: flex;
+	
+	&__cart {
+		width: 30px;
+		height: 30px;
+		fill: #000;
+		
+	}
+// &__search{
+// 			width: 30px;
+// 			height: 30px;
+// 		fill:red;
+		
+			
+// 		}
+	
 
 	&__item {
 		&:not(:last-child) {
@@ -20,42 +35,46 @@
 		&:hover {
 			background-color: $orange;
 			border-radius: 5px;
-
-			&:hover {
-				.user__num {
-					background-color: $white;
-					color: $orange;
-				}
-			}
-
-			svg {
-
-				path,
-				ellipse {
-					stroke: $white;
-				}
-			}
 		}
 
 		&:focus {
 			background-color: rgba(255, 122, 80, 0.1);
 			box-shadow: 0 0 0 2px rgba(255, 104, 56, 0.7);
 			border-radius: 5px;
-
-			svg {
-
-				path,
-				ellipse {
-					stroke: $default;
-				}
-			}
+					svg {
+						path,
+						ellipse {
+							stroke: $default;
+						}
+					}
 		}
-
+	
 		&:active {
-			border-radius: none;
-			outline: none;
+		border-radius: none;
+				outline: none;
 		}
+
+		// &__cart {
+		// 	width: 20px;
+		// 	height: 20px;
+		// 	background-color: #000;
+		// }	
+	// &__search{
+	// 		width: 20px;
+	// 		height: 20px;
+	// 		background-color: #000;
+	// 	}
+
 	}
+
+	// svg {
+	// 	path,
+	// 		ellipse {
+	// 			stroke: $white;
+	// 		}
+	// 	}
+	// }
+
 
 	&__num {
 		position: absolute;
@@ -70,6 +89,13 @@
 		background-color: $orange;
 
 		&:hover {
+			background-color: $white;
+			color: $orange;
+		}
+	}
+
+	&:hover {
+		.user__num {
 			background-color: $white;
 			color: $orange;
 		}

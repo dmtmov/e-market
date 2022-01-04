@@ -107,10 +107,10 @@
 		padding-right: 40px;
 		border-radius: 50%;
 		@extend %object;
-
 	}
 
 	&__blockquote {
+		position: relative;
 		max-width: 570px;
 		display: block;
 		font-weight: 400;
@@ -118,6 +118,23 @@
 		color: $default;
 		word-wrap: break-word;
 		margin-right: 40px;
+		// @include line-clamp(20, 1.5, 8);
+
+		&::before {
+			top: -6px;
+			left: -38px;
+			@extend %quote;
+			background-image: url('../images/review-slider/quote.svg');
+		}
+
+		&::after {
+			bottom: 90px;
+			right: -38px;
+			@extend %quote;
+			background-image: url('../images/review-slider/quote.svg');
+			transform: rotate(190deg);
+			transform: scale(-1, 1);
+		}
 	}
 
 	&__name {

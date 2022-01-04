@@ -10,8 +10,13 @@
 		display: flex;
 		margin-bottom: 45px;
 	}
+}
 
 	&__item {
+		&:not(:last-child) {
+			margin-right: 20px;
+		}
+
 		.mixitup-control-active {
 			color: $white;
 			background-color: $orange;
@@ -20,10 +25,6 @@
 				fill: $white;
 			}
 		}
-	}
-
-	&__item:not(:last-child) {
-		margin-right: 20px;
 	}
 
 	&__btn {
@@ -37,36 +38,48 @@
 		box-shadow: 0 0 0 1px $shadow;
 		border: 1px solid transparent;
 		transition: box-shadow 0.5s ease-in-out, color 0.5s, background-color 0.5s, opacity 0.7s ease;
-	}
+		.burger-btn,
+		&:hover {
+			color: $orange;
+			background-color: rgba(255, 122, 80, 0.1);
+			box-shadow: inset 0 -5px 12px rgba(255, 104, 56, 0.2);
 
-	&__svg {
-		position: absolute;
-		top: 12px;
-		left: 31px;
-	}
-
-	&__btn:hover {
-		color: $orange;
-		background-color: rgba(255, 122, 80, 0.1);
-		box-shadow: inset 0 -5px 12px rgba(255, 104, 56, 0.2);
-
-		svg {
-			transition: box-shadow 0.5s ease-in-out, opacity 0.7s ease;
-
-			path {
-				fill: $orange;
+		svg{
+			transition: box-shadow 0.5s ease-in-out, opacity 0.7s ease;	
+		}
+path {
+		fill: $orange;
+				}
 			}
+		}
+		
+		&:focus {
+			box-shadow: 0 0 0 2px rgba(255, 104, 56, 0.7);
+		}
+	
+		&:active {
+			background-color: $white;
+			box-shadow: inset 0 -5px 12px rgba(255, 104, 56, 0.2);
 		}
 	}
 
-	&__btn:focus {
-		box-shadow: 0 0 0 2px rgba(255, 104, 56, 0.7);
-	}
+// 	.burger-btn{
+// 		width:40px;
+// 		height:40px;
+// 		fill:#000;
+// 		top: 12px;
+// 		left: 31px;
+// &:hover{
+// fill:red;
 
-	&__btn:active {
-		background-color: $white;
-		box-shadow: inset 0 -5px 12px rgba(255, 104, 56, 0.2);
-	}
+// }
+
+
+	// &__svg {
+	// 	position: absolute;
+	// 	top: 12px;
+	// 	left: 31px;
+	// }
 
 	&__inner {
 		display: grid;
@@ -75,26 +88,9 @@
 		margin-bottom: 60px;
 	}
 
-	// &__items {
-	// 	display: flex;
-	// 	width: 210px;
-	// 	height: 100%;
-	// 	padding: 20px 15px;
-	// 	flex-direction: column;
-	// 	justify-content: space-between;
-	// 	align-items: center;
-	// 	background-color: $white;
-	// 	box-shadow: 0 0 0 1px #ECECEC;
-	// 	border-radius: 5px;
-
-	// 	&:hover {
-	// 		box-shadow: 0 0 0 1px $orange;
-	// 	}
-	// }
-
 	&__info {
 		border-bottom: 1px solid $title;
-		line-height: 0.80em;
+		line-height: 1.0;
 
 		&:hover {
 			border-bottom: none;

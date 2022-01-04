@@ -161,4 +161,4 @@ exports.watching = watching;
 exports.images = images;
 exports.cleanDist = cleanDist;
 exports.build = series(cleanDist, images, build);
-exports.default = parallel(svgSprites, styles, scripts, htmlInclude, browsersync, watching);
+exports.default = parallel( styles, scripts,svgSprites, htmlInclude, browsersync, watching);

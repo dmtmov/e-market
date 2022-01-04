@@ -1,4 +1,16 @@
 .header {
 	justify-content: space-between;
 	align-items: center;
+
+	&__wrapper {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__menu {
+		@extend %position;
+		margin: 0 auto;
+		padding: 60px 0;
+	}
+
 }

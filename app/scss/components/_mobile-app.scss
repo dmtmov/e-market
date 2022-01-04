@@ -12,12 +12,10 @@
 	}
 
 	&__title {
-		word-wrap: break-word;
 		margin-bottom: 45px;
 	}
 
 	&__text {
-		word-wrap: break-word;
 		margin-bottom: 30px;
 		opacity: 0.9;
 	}
@@ -26,19 +24,16 @@
 		display: flex;
 	}
 
-	&__link:not(:last-child) {
-		margin-right: 30px;
+	&__link {
+		&:not(:last-child) {
+			margin-right: 30px;
+		}
 	}
 
-	// &__image {
-	// 	// @extend %object;
-	// 	width: 570px;
-	// 	height: 380px;
+	&__image {
+		@extend %object;
+		width: 570px;
+		height: 380px;
 
-	// }
-}
-
-.mobile-app__image {
-	width: 570px;
-	height: 380px;
+	}
 }

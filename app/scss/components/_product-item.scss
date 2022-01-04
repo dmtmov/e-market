@@ -35,8 +35,8 @@
 	}
 
 	&__time::before {
-		position: absolute;
 		content: "";
+		position: absolute;
 		width: 22px;
 		height: 22px;
 		top: 2px;
@@ -57,9 +57,9 @@
 	}
 
 	&__button {
-		padding: 7px 32px;
 		padding: 9px 32px 6px 32px;
 		border-radius: 20px;
+
 
 
 		&:hover,

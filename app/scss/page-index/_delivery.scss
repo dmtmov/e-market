@@ -37,31 +37,42 @@
 		font-size: 24px;
 		padding-left: 65px;
 		position: relative;
-	}
 
-	&__item::before {
-		content: "";
-		position: absolute;
-		left: 0;
-		width: 32px;
-		height: 33px;
-	}
+		// @include w(992){
+		// 	padding-left: 44px;
+		// }
 
-	&__item--timer::before {
-		background-image: url('../images/delivery/delivery-timer.svg');
-		width: 34px;
-	}
 
-	&__item--moto::before {
-		background-image: url('../images/delivery/delivery-moto.svg');
-	}
+		&:not(:last-child) {
+			margin-bottom: 20px;
+		}
 
-	&__item--resturent::before {
-		background-image: url('../images/delivery/delivery-resturent.svg');
-	}
+		&::before {
+			content: "";
+			position: absolute;
+			left: 0;
+			width: 32px;
+			height: 33px;
+		}
 
-	&__item:not(:last-child) {
-		margin-bottom: 20px;
+		&--timer {
+			&::before {
+				background-image: url('../images/delivery/delivery-timer.svg');
+				width: 34px;
+			}
+		}
+
+		&--moto {
+			&::before {
+				background-image: url('../images/delivery/delivery-moto.svg');
+			}
+		}
+
+		&--resturent {
+			&::before {
+				background-image: url('../images/delivery/delivery-resturent.svg');
+			}
+		}
 	}
 
 	&__order {
