@@ -1,20 +1,26 @@
 .user {
 	display: flex;
-	
+
 	&__cart {
 		width: 30px;
 		height: 30px;
-		fill: #000;
-		
+
+		path {
+			stroke: #000;
+		}
 	}
-// &__search{
-// 			width: 30px;
-// 			height: 30px;
-// 		fill:red;
-		
-			
-// 		}
-	
+
+	&__search {
+		width: 30px;
+		height: 30px;
+
+		path,
+		ellipse {
+			stroke: red;
+		}
+	}
+
+	// background-image: url('../images/sprite.svg#buy-btn');
 
 	&__item {
 		&:not(:last-child) {
@@ -35,46 +41,23 @@
 		&:hover {
 			background-color: $orange;
 			border-radius: 5px;
+
 		}
 
 		&:focus {
-			background-color: rgba(255, 122, 80, 0.1);
-			box-shadow: 0 0 0 2px rgba(255, 104, 56, 0.7);
+			@extend %rgba-01;
+			@extend %box-shadow-07;
 			border-radius: 5px;
-					svg {
-						path,
-						ellipse {
-							stroke: $default;
-						}
-					}
+			// background-color: rgba(255, 122, 80, 0.1);
+			// box-shadow: 0 0 0 2px rgba(255, 104, 56, 0.7);
+
 		}
-	
+
 		&:active {
-		border-radius: none;
-				outline: none;
+			border-radius: none;
+			outline: none;
 		}
-
-		// &__cart {
-		// 	width: 20px;
-		// 	height: 20px;
-		// 	background-color: #000;
-		// }	
-	// &__search{
-	// 		width: 20px;
-	// 		height: 20px;
-	// 		background-color: #000;
-	// 	}
-
 	}
-
-	// svg {
-	// 	path,
-	// 		ellipse {
-	// 			stroke: $white;
-	// 		}
-	// 	}
-	// }
-
 
 	&__num {
 		position: absolute;

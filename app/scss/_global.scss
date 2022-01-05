@@ -60,13 +60,14 @@ body {
 
 	&:focus {
 		text-decoration: none;
-		box-shadow: 0 0 0 2px rgba(255, 104, 56, 0.7);
+		@extend %box-shadow-07;
 		color: $default;
 		border-radius: 5px;
+		// box-shadow: 0 0 0 2px rgba(255, 104, 56, 0.7);
 	}
 
 	&:active {
-		text-shadow: f;
+		text-shadow: 2px 2px 5px rgba(49, 53, 43, 0.5);
 	}
 }
 
@@ -89,12 +90,15 @@ body {
 
 	&:focus {
 		color: $orange;
-		background-color: rgba(255, 122, 80, 0.1);
-		box-shadow: 0 0 0 2px rgba(255, 104, 56, 0.7);
+		@extend %rgba-01;
+		@extend %box-shadow-07;
+		// box-shadow: 0 0 0 2px rgba(255, 104, 56, 0.7);
+		// background-color: rgba(255, 122, 80, 0.1);
 	}
 
 	&:active {
-		background-color: rgba(255, 122, 80, 0.1);
+		@extend %rgba-01;
 		box-shadow: none;
+		// background-color: rgba(255, 122, 80, 0.1);
 	}
 }

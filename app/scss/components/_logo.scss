@@ -1,12 +1,17 @@
 .logo {
-	transition: box-shadow 0.7s ease-in-out, opacity 0.5s ease;
+	&__img {
+		object-fit: contain;
+	}
+
+	transition: box-shadow 0.7s ease-in-out,
+	opacity 0.5s ease;
 
 	&:hover {
 		opacity: 0.7;
 	}
 
 	&:focus {
-		box-shadow: 0 0 0px 2px $orange;
+		@extend %box-shadow-07;
 		border-radius: 5px;
 	}
 

@@ -11,8 +11,8 @@
 
 			svg {
 				&:hover {
-					box-shadow: 0 0 0 1px $orange;
-					background-color: rgba(255, 122, 80, 0.1);
+					@extend %rgba-01;
+					@extend %box-shadow-07;
 					border-radius: 50%;
 
 					path {
@@ -21,7 +21,7 @@
 				}
 
 				&:focus {
-					background: rgba(255, 255, 255, 0.01);
+					background-color: rgba(255, 255, 255, 0.01);
 					border: 3px solid #C2C2C2;
 					box-shadow: 0 0 0 2px rgba(255, 104, 56, 0.7);
 

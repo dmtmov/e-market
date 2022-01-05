@@ -26,7 +26,7 @@
 		}
 
 		&:focus {
-			box-shadow: 0 0 0 2px rgba(255, 104, 56, 0.7);
+			@extend %box-shadow-07;
 			border-radius: 50%;
 
 			svg {

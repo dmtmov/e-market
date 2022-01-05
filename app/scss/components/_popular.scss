@@ -10,7 +10,6 @@
 		display: flex;
 		margin-bottom: 45px;
 	}
-}
 
 	&__item {
 		&:not(:last-child) {
@@ -38,48 +37,33 @@
 		box-shadow: 0 0 0 1px $shadow;
 		border: 1px solid transparent;
 		transition: box-shadow 0.5s ease-in-out, color 0.5s, background-color 0.5s, opacity 0.7s ease;
-		.burger-btn,
+
 		&:hover {
 			color: $orange;
-			background-color: rgba(255, 122, 80, 0.1);
+			// background-color: rgba(255, 122, 80, 0.1);
+			@extend %rgba-01;
 			box-shadow: inset 0 -5px 12px rgba(255, 104, 56, 0.2);
+		}
 
-		svg{
-			transition: box-shadow 0.5s ease-in-out, opacity 0.7s ease;	
+		svg {
+			transition: box-shadow 0.5s ease-in-out, opacity 0.7s ease;
 		}
-path {
-		fill: $orange;
-				}
-			}
+
+		path {
+			fill: $orange;
 		}
-		
+
 		&:focus {
-			box-shadow: 0 0 0 2px rgba(255, 104, 56, 0.7);
+			@extend %box-shadow-07;
+			// box-shadow: 0 0 0 2px rgba(255, 104, 56, 0.7);
 		}
-	
+
 		&:active {
 			background-color: $white;
 			box-shadow: inset 0 -5px 12px rgba(255, 104, 56, 0.2);
 		}
 	}
 
-// 	.burger-btn{
-// 		width:40px;
-// 		height:40px;
-// 		fill:#000;
-// 		top: 12px;
-// 		left: 31px;
-// &:hover{
-// fill:red;
-
-// }
-
-
-	// &__svg {
-	// 	position: absolute;
-	// 	top: 12px;
-	// 	left: 31px;
-	// }
 
 	&__inner {
 		display: grid;
