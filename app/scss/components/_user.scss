@@ -1,32 +1,28 @@
 .user {
 	display: flex;
 
-	&__cart {
-		width: 30px;
-		height: 30px;
+	&__img {
+		fill: $silver;
+		stroke: $title;
 
-		path {
-			stroke: #000;
+		&--search {
+			width: 21px;
+			height: 22px;
+		}
+
+		&--cart {
+			width: 21px;
+			height: 20px;
 		}
 	}
-
-	&__search {
-		width: 30px;
-		height: 30px;
-
-		path,
-		ellipse {
-			stroke: red;
-		}
-	}
-
-	// background-image: url('../images/sprite.svg#buy-btn');
 
 	&__item {
 		&:not(:last-child) {
 			margin-right: 10px;
 		}
 	}
+
+
 
 	&__btn {
 		position: relative;
@@ -42,45 +38,47 @@
 			background-color: $orange;
 			border-radius: 5px;
 
+			.user__img {
+				fill: $orange;
+				stroke: $white;
+			}
+
+			.user__num {
+				background-color: $white;
+				color: $orange;
+			}
 		}
 
 		&:focus {
-			@extend %rgba-01;
+			background-color: $pink;
 			@extend %box-shadow-07;
 			border-radius: 5px;
 			// background-color: rgba(255, 122, 80, 0.1);
 			// box-shadow: 0 0 0 2px rgba(255, 104, 56, 0.7);
-
 		}
 
 		&:active {
 			border-radius: none;
 			outline: none;
 		}
-	}
 
-	&__num {
-		position: absolute;
-		align-items: center;
-		padding: 2px 4px;
-		font-size: 10px;
-		line-height: 1;
-		top: 4px;
-		left: 23px;
-		color: $white;
-		border-radius: 50%;
-		background-color: $orange;
 
-		&:hover {
-			background-color: $white;
-			color: $orange;
-		}
-	}
-
-	&:hover {
 		.user__num {
-			background-color: $white;
-			color: $orange;
+			position: absolute;
+			align-items: center;
+			padding: 2px 4px;
+			font-size: 10px;
+			line-height: 1;
+			top: 4px;
+			left: 23px;
+			color: $white;
+			border-radius: 50%;
+			background-color: $orange;
+
+			&:hover {
+				background-color: $white;
+				color: $orange;
+			}
 		}
 	}
 }

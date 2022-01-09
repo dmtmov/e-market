@@ -22,19 +22,20 @@
 	}
 
 
+
 	&__button {
 		display: flex;
 		position: relative;
 		padding: 13px 40px 13px 70px;
 
-		.form__telegram {
-			&:hover {
+		&:hover {
+			.form__img {
 				fill: $orange;
 			}
 		}
 	}
 
-	&__telegram {
+	&__img {
 		position: absolute;
 		top: 12px;
 		left: 35px;
@@ -43,4 +44,5 @@
 		transition: box-shadow 0.7s ease-in-out, opacity 0.5s ease;
 		fill: $white;
 	}
+
 }

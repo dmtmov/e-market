@@ -5,8 +5,7 @@ $white:#FFFFFF;
 $shadow :#ECECEC;
 $gray:#c2c2c2;
 $silver:#F9FAFF;
-
-
+$pink:#FFF2ED;
 
 
 %position {
@@ -47,4 +46,8 @@ $silver:#F9FAFF;
 
 %box-shadow-07 {
 	box-shadow: 0 0 0 2px rgba(255, 104, 56, 0.7);
+}
+
+%box-shadow-02 {
+	box-shadow: inset 0 -5px 12px rgba(255, 104, 56, 0.2);
 }

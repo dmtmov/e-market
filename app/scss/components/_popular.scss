@@ -20,7 +20,7 @@
 			color: $white;
 			background-color: $orange;
 
-			path {
+			.popular-btn__img {
 				fill: $white;
 			}
 		}
@@ -39,28 +39,18 @@
 		transition: box-shadow 0.5s ease-in-out, color 0.5s, background-color 0.5s, opacity 0.7s ease;
 
 		&:hover {
-			color: $orange;
-			// background-color: rgba(255, 122, 80, 0.1);
+			// color: $orange;
 			@extend %rgba-01;
-			box-shadow: inset 0 -5px 12px rgba(255, 104, 56, 0.2);
+			@extend %box-shadow-02;
+			// background-color: rgba(255, 122, 80, 0.1);
+			// box-shadow: inset 0 -5px 12px rgba(255, 104, 56, 0.2);
 		}
 
-		svg {
+		.popular-btn__img {
+			width: 45px;
+			height: 44px;
+			fill: $title;
 			transition: box-shadow 0.5s ease-in-out, opacity 0.7s ease;
-		}
-
-		path {
-			fill: $orange;
-		}
-
-		&:focus {
-			@extend %box-shadow-07;
-			// box-shadow: 0 0 0 2px rgba(255, 104, 56, 0.7);
-		}
-
-		&:active {
-			background-color: $white;
-			box-shadow: inset 0 -5px 12px rgba(255, 104, 56, 0.2);
 		}
 	}
 
