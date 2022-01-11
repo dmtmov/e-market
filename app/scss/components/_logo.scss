@@ -1,18 +1,16 @@
 .logo {
 	&__img {
-		object-fit: contain;
+		object-fit: cover;
+		transition: box-shadow 0.7s ease-in-out, opacity 0.5s ease;
 	}
 
-	transition: box-shadow 0.7s ease-in-out,
-	opacity 0.5s ease;
-
 	&:hover {
-		opacity: 0.7;
+		opacity: 0.8;
 	}
 
 	&:focus {
-		@extend %box-shadow-07;
 		border-radius: 5px;
+		@extend %box-shadow-07;
 	}
 
 	&:active {

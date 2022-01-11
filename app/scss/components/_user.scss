@@ -11,32 +11,27 @@
 		}
 
 		&--cart {
-			width: 21px;
+			width: 24px;
 			height: 20px;
 		}
 	}
 
 	&__item {
 		&:not(:last-child) {
-			margin-right: 10px;
+			margin-right: 11px;
 		}
 	}
 
-
-
 	&__btn {
+		@extend %position-center;
 		position: relative;
-		display: flex;
-		justify-content: center;
 		padding: 11px;
 		border-radius: 6px;
 		background-color: $silver;
-		background-repeat: no-repeat;
 		transition: box-shadow 0.5s ease-in-out, background-color 0.8s ease, color 0.8s ease;
 
 		&:hover {
 			background-color: $orange;
-			border-radius: 5px;
 
 			.user__img {
 				fill: $orange;
@@ -53,15 +48,16 @@
 			background-color: $pink;
 			@extend %box-shadow-07;
 			border-radius: 5px;
-			// background-color: rgba(255, 122, 80, 0.1);
-			// box-shadow: 0 0 0 2px rgba(255, 104, 56, 0.7);
+
+			.user__img {
+				fill: $pink;
+				stroke: #000;
+			}
 		}
 
 		&:active {
-			border-radius: none;
-			outline: none;
+			box-shadow: none;
 		}
-
 
 		.user__num {
 			position: absolute;
@@ -69,10 +65,10 @@
 			padding: 2px 4px;
 			font-size: 10px;
 			line-height: 1;
-			top: 4px;
-			left: 23px;
+			top: 6px;
+			left: 25px;
 			color: $white;
-			border-radius: 50%;
+			border-radius: 50px;
 			background-color: $orange;
 
 			&:hover {

@@ -7,15 +7,13 @@
 	box-shadow: 0 3px 3px rgba(0, 0, 0, 0.1);
 
 	&:hover {
-		box-shadow: 0 3px 15px rgba(255, 104, 56, 0.5);
+		@extend %box-shadow-05;
 		border-radius: 10px;
-
-
 	}
 
 	&__img {
 		border-radius: 10px;
-		object-fit: cover;
+		@extend %object;
 	}
 
 	&__wrapper {
@@ -30,21 +28,21 @@
 		position: relative;
 		font-weight: 300;
 		font-size: 18px;
-		line-height: 30px;
+		line-height: 1.6;
 		padding-left: 30px;
 		$defaultcolor: $default;
 		opacity: 0.9;
-	}
 
-	&__time::before {
-		content: "";
-		position: absolute;
-		width: 22px;
-		height: 22px;
-		top: 2px;
-		left: 0px;
-		background-image: url('../images/product/product-timer.svg');
-		@extend %background;
+		&::before {
+			content: "";
+			position: absolute;
+			width: 22px;
+			height: 22px;
+			top: 2px;
+			left: 0;
+			background-image: url('../images/product/product-timer.svg');
+			@extend %background;
+		}
 	}
 
 	&__name {
@@ -60,11 +58,9 @@
 	&__arrow {
 		width: 14px;
 		height: 13px;
-		fill: #fff;
-		transition: fill 0.8s ease;
-		transform: translate 10s ease-in-out;
+		fill: $white;
+		transition: fill 0.8s ease, transform 0.7s;
 	}
-
 
 	&__button {
 		padding: 9px 32px 6px 32px;
@@ -73,7 +69,7 @@
 		&:hover {
 			.product-item__arrow {
 				fill: $orange;
-				transform: translate X(50%);
+				transform: translateX(100%);
 			}
 		}
 

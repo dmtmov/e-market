@@ -1,14 +1,14 @@
 .footer {
 	&__inner {
 		display: flex;
-		justify-content: space-evenly;
+		justify-content: space-between;
 		align-items: top;
-		padding-bottom: 70px;
+		padding-bottom: 65px;
 	}
 
 	&__content {
 		max-width: 200px;
-		margin-right: 70px;
+		margin-right: 40px;
 	}
 
 	&__logo {
@@ -19,7 +19,7 @@
 	&__items {
 		column-count: 3;
 		column-gap: 3px;
-		margin-right: 43px;
+		margin-right: 27px;
 	}
 
 	&__list {

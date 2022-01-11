@@ -18,6 +18,7 @@
 	&__text {
 		margin-bottom: 30px;
 		opacity: 0.9;
+		@include line-clamp(20, 1.5, 4);
 	}
 
 	&__list {
@@ -31,9 +32,8 @@
 	}
 
 	&__image {
-		@extend %object;
 		width: 570px;
 		height: 380px;
-
+		@extend %background;
 	}
 }

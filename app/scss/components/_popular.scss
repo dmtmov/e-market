@@ -8,7 +8,59 @@
 	&__filter {
 		justify-content: start;
 		display: flex;
-		margin-bottom: 45px;
+		margin-bottom: 25px;
+	}
+
+	&-btn__img {
+		position: absolute;
+		width: 45px;
+		height: 44px;
+		top: 9px;
+		left: 28px;
+		fill: $title;
+		transition: fill 0.5s ease;
+	}
+
+	&__btn {
+		display: flex;
+		position: relative;
+		padding: 22px 29px 22px 86px;
+		border-radius: 5px;
+		line-height: 1.3;
+		background-repeat: no-repeat;
+		background-color: $white;
+		box-shadow: 0 0 0 1px $shadow;
+		border: 1px solid transparent;
+		transition: box-shadow 0.5s ease-in-out, color 0.5s, background-color 0.5s, opacity 0.7s ease;
+
+		&:hover {
+			color: $orange;
+			background-color: $white;
+			@extend %box-shadow-07;
+
+			.popular-btn__img {
+				fill: $orange;
+			}
+		}
+
+		&:focus {
+			color: $title;
+			@extend %box-shadow-07;
+			@extend %rgba-01;
+
+			.popular-btn__img {
+				fill: $title;
+			}
+		}
+
+		&:active {
+			background-color: $white;
+			@extend %box-shadow-02;
+
+			.popular-btn__img {
+				fill: $title;
+			}
+		}
 	}
 
 	&__item {
@@ -25,35 +77,6 @@
 			}
 		}
 	}
-
-	&__btn {
-		display: flex;
-		position: relative;
-		padding: 22px 29px 22px 86px;
-		border-radius: 5px;
-		line-height: 1.3;
-		background-repeat: no-repeat;
-		background-color: $white;
-		box-shadow: 0 0 0 1px $shadow;
-		border: 1px solid transparent;
-		transition: box-shadow 0.5s ease-in-out, color 0.5s, background-color 0.5s, opacity 0.7s ease;
-
-		&:hover {
-			// color: $orange;
-			@extend %rgba-01;
-			@extend %box-shadow-02;
-			// background-color: rgba(255, 122, 80, 0.1);
-			// box-shadow: inset 0 -5px 12px rgba(255, 104, 56, 0.2);
-		}
-
-		.popular-btn__img {
-			width: 45px;
-			height: 44px;
-			fill: $title;
-			transition: box-shadow 0.5s ease-in-out, opacity 0.7s ease;
-		}
-	}
-
 
 	&__inner {
 		display: grid;

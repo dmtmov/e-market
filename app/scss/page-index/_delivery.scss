@@ -7,8 +7,7 @@
 		width: 440px;
 		height: 585px;
 		margin-right: 50px;
-		background-position: center;
-		background-repeat: no-repeat;
+		@extend %background;
 	}
 
 	&__content {
@@ -20,7 +19,6 @@
 		max-width: 470px;
 		margin-bottom: 30px;
 		text-align: left;
-		word-wrap: break-word;
 	}
 
 	&__text {
@@ -41,8 +39,6 @@
 		// @include w(992){
 		// 	padding-left: 44px;
 		// }
-
-
 		&:not(:last-child) {
 			margin-bottom: 20px;
 		}
