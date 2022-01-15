@@ -99,3 +99,11 @@ body {
 		box-shadow: none;
 	}
 }
+
+.filter-items {
+	@extend %filter__items;
+}
+
+.filter-title {
+	@extend %filter__title;
+}

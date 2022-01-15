@@ -6,7 +6,7 @@ $shadow :#ECECEC;
 $gray:#c2c2c2;
 $silver:#F9FAFF;
 $pink:#FFF2ED;
-
+$btn: #FAEDED;
 
 %position {
 	display: flex;
@@ -43,6 +43,28 @@ $pink:#FFF2ED;
 	height: 20px;
 	position: absolute;
 	background-repeat: no-repeat;
+}
+
+%filter__items {
+	display: block;
+	flex-direction: column;
+	width: 270px;
+	border-radius: 5px;
+	background-color: $white;
+	box-shadow: 0 0 0 1px $shadow;
+
+	&:not(:last-child) {
+		margin-bottom: 30px;
+	}
+}
+
+%filter__title {
+	padding: 15px 15px;
+	color: $title;
+	font-size: 24px;
+	line-height: 1.2;
+	font-weight: normal;
+	border: 1px solid $shadow;
 }
 
 %rgba-01 {
