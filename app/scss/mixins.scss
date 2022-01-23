@@ -18,8 +18,18 @@
 
 }
 
-// @mixin max-width($width) {
-// 	@media only screen and (max-width: $width + "px") {
-// 		@content;
-// 	}
+@mixin max-width($width) {
+	@media only screen and (max-width: $width+ "px") {
+		@content;
+	}
+}
+
+// @include max-width(992){
+// 	padding-left: 44px;
 // }
+
+$desktops:1200;
+$tablets:992;
+$mobile:768;
+$sm:576;
+$xs:480;

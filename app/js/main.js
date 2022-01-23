@@ -23,6 +23,6 @@ $(function () {
 
 	});
 
-	$('.cataiog-choice').styler();
+	$('.catalog-choice').styler();
 
 });

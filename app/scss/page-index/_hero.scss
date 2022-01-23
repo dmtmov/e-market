@@ -37,8 +37,10 @@
 		width: 100%;
 		max-width: 560px;
 		height: 660px;
-		align-items: center;
-		background-size: cover;
-		background-repeat: no-repeat;
+		@extend %background;
+
+		// @include max-width($desktops) {
+		// 	opacity: 0.2;
+		// }
 	}
 }

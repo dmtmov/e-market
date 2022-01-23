@@ -5,24 +5,33 @@
 				Каталог продуктов
 			</h2>
 			<div class="catalog__filter">
-				<form action="#">
-				<select class="cataiog-choice" name="choice" id="choice1">
-					<option value="1">По названию</option>
-					<option value="2">По названию</option>
-					<option value="3">По названию</option>
-					<option value="4">По названию</option>
-					<option value="5">По названию</option>
-					<option value="6">По названию</option>
-					<option value="7">По названию</option>
-					<option value="8">По названию</option>
-					<option value="9">По названию</option>
-				</select>
+				<form class="catalog-form" action="#">
 
-				<select class="cataiog-choice" name="choice" id="choice2">
-					<option value="1">по 12</option>
-					<option value="2">по 6</option>
-					<option value="3">по 4</option>
-				</select>
+					<select class="catalog-choice" name="choice" id="choice1">
+
+						<!-- <svg class="catalog-choice__catalog">
+							<use xlink:href="images/sprite.svg#catalog.svg"></use>
+						</svg> -->
+
+						<option value="1">По названию</option>
+						<option value="2">По названию</option>
+						<option value="3">По названию</option>
+						<option value="4">По названию</option>
+						<option value="5">По названию</option>
+						<option value="6">По названию</option>
+						<option value="7">По названию</option>
+						<option value="8">По названию</option>
+						<option value="9">По названию</option>
+					</select>
+
+					<select class="catalog-choice" name="choice" id="choice2">
+						<!-- <svg class="catalog-choice__catalog">
+							<use xlink:href="images/sprite.svg#catalog.svg"></use>
+						</svg> -->
+						<option value="1">по 12</option>
+						<option value="2">по 6</option>
+						<option value="3">по 4</option>
+					</select>
 				</form>
 			</div>
 		</div>
@@ -97,12 +106,12 @@
 
 					<form class="filter-price__form" action="#">
 						<div class="filter-price__box">
-						
+
 							<span class="filter-price__span">от</span>
 							<input class="filter-price__btn filter-price__form" type="val" name="price" id="price"
 								placeholder="100" required>
 							<span class="filter-price__span">₽</span>
-						
+
 							<span class="filter-price__span">до</span>
 							<input class="filter-price__btn filter-price__to" type="val" name="price" id="price"
 								placeholder="1000" required>
@@ -112,7 +121,7 @@
 						<div class="filter-price__scale">
 							<input class="filter-price__input" type="text" data-min="100" data-max="1000" data-form="200"
 								data-to="1000">
-								<label for="priсe" aria-label="Выбор суммы"></label>	
+							<label for="priсe" aria-label="Выбор суммы"></label>
 						</div>
 					</form>
 				</div>
@@ -120,89 +129,157 @@
 
 
 
+			<div class="catalog__content">
+				<ul class="catalog__popular popular__inner">
+					<li class="popular__items mix pizza">
+						<article class="product-card">
+							<img class="product-card__img" src="images/popular/photo-1.svg" width="140" height="140"
+								alt=" фото,чизбургер с листьями салата">
+							<h3 class="product-card__text">Чизбургер с листьями салата</h3>
+							<span class="product-card__price">160 pуб</span>
+							<button class="button" type="button">В корзину</button>
+						</article>
+					</li>
 
-			<ul class="popular__inner">
-				<li class="popular__items mix pizza">
-					<article class="product-card">
-						<img class="product-card__img" src="images/popular/photo-1.svg" width="140" height="140"
-							alt=" фото,чизбургер с листьями салата">
-						<h3 class="product-card__text">Чизбургер с листьями салата</h3>
-						<span class="product-card__price">160 pуб</span>
-						<button class="button" type="button">В корзину</button>
-					</article>
-				</li>
+					<li class="popular__items mix burger">
+						<article class="product-card">
+							<img class="product-card__img" src="images/popular/photo-2.svg" width="140" height="140"
+								alt=" фото,бифбургер">
+							<h3 class="product-card__text">Бифбургер</h3>
+							<span class="product-card__price">190 pуб</span>
+							<button class="button" type="button">В корзину</button>
+						</article>
+					</li>
 
-				<li class="popular__items mix burger">
-					<article class="product-card">
-						<img class="product-card__img" src="images/popular/photo-2.svg" width="140" height="140"
-							alt=" фото,бифбургер">
-						<h3 class="product-card__text">Бифбургер</h3>
-						<span class="product-card__price">190 pуб</span>
-						<button class="button" type="button">В корзину</button>
-					</article>
-				</li>
+					<li class="popular__items mix dish">
+						<article class="product-card">
+							<img class="product-card__img" src="images/popular/photo-3.svg" width="140" height="140"
+								alt="фото,королевский чизбургер">
+							<h3 class="product-card__text">Королевский чизбургер</h3>
+							<span class="product-card__price">260 pуб</span>
+							<button class="button" type="button">В корзину</button>
+						</article>
+					</li>
 
-				<li class="popular__items mix dish">
-					<article class="product-card">
-						<img class="product-card__img" src="images/popular/photo-3.svg" width="140" height="140"
-							alt="фото,королевский чизбургер">
-						<h3 class="product-card__text">Королевский чизбургер</h3>
-						<span class="product-card__price">260 pуб</span>
-						<button class="button" type="button">В корзину</button>
-					</article>
-				</li>
+					<li class="popular__items mix asia">
+						<article class="product-card">
+							<img class="product-card__img" src="images/popular/photo-4.svg" width="140" height="140"
+								alt="фото,черный гамбургер">
+							<h3 class="product-card__text">Черный гамбургер</h3>
+							<span class="product-card__price">199 pуб</span>
+							<button class="button" type="button">В корзину</button>
+						</article>
+					</li>
 
-				<li class="popular__items mix asia">
-					<article class="product-card">
-						<img class="product-card__img" src="images/popular/photo-4.svg" width="140" height="140"
-							alt="фото,черный гамбургер">
-						<h3 class="product-card__text">Черный гамбургер</h3>
-						<span class="product-card__price">199 pуб</span>
-						<button class="button" type="button">В корзину</button>
-					</article>
-				</li>
+					<li class="popular__items mix sandwich">
+						<article class="product-card">
+							<img class="product-card__img" src="images/popular/photo-1.svg" width="140" height="140"
+								alt="фото,чизбургер с листьями салата">
+							<h3 class="product-card__text">Чизбургер с листьями салата</h3>
+							<span class="product-card__price">160 pуб</span>
+							<button class="button" type="button">В корзину</button>
+						</article>
+					</li>
 
-				<li class="popular__items mix sandwich">
-					<article class="product-card">
-						<img class="product-card__img" src="images/popular/photo-1.svg" width="140" height="140"
-							alt="фото,чизбургер с листьями салата">
-						<h3 class="product-card__text">Чизбургер с листьями салата</h3>
-						<span class="product-card__price">160 pуб</span>
-						<button class="button" type="button">В корзину</button>
-					</article>
-				</li>
+					<li class="popular__items mix dish">
+						<article class="product-card">
+							<img class="product-card__img" src='images/popular/photo-2.svg' width="140" height="140"
+								alt="фото,бифбургер">
+							<h3 class="product-card__text">Бифбургер</h3>
+							<span class="product-card__price">190 pуб</span>
+							<button class="button" type="button">В корзину</button>
+						</article>
+					</li>
 
-				<li class="popular__items mix dish">
-					<article class="product-card">
-						<img class="product-card__img" src='images/popular/photo-2.svg' width="140" height="140"
-							alt="фото,бифбургер">
-						<h3 class="product-card__text">Бифбургер</h3>
-						<span class="product-card__price">190 pуб</span>
-						<button class="button" type="button">В корзину</button>
-					</article>
-				</li>
+					<li class="popular__items mix asia">
+						<article class="product-card">
+							<img class="product-card__img" src="images/popular/photo-3.svg" width="140" height="140"
+								alt="фото, королевский чизбургер">
+							<h3 class="product-card__text">Королевский чизбургер</h3>
+							<span class="product-card__price">260 pуб</span>
+							<button class="button" type="button">В корзину</button>
+						</article>
+					</li>
+					<li class="popular__items mix sandwich">
+						<article class="product-card">
+							<img class="product-card__img" src="images/popular/photo-4.svg" width="140" height="140"
+								alt="фото,черный гамбургер">
+							<h3 class="product-card__text">Черный гамбургер</h3>
+							<span class="product-card__price">199 pуб</span>
+							<button class="button" type="button">В корзину</button>
+						</article>
+					</li>
 
-				<li class="popular__items mix asia">
-					<article class="product-card">
-						<img class="product-card__img" src="images/popular/photo-3.svg" width="140" height="140"
-							alt="фото, королевский чизбургер">
-						<h3 class="product-card__text">Королевский чизбургер</h3>
-						<span class="product-card__price">260 pуб</span>
-						<button class="button" type="button">В корзину</button>
-					</article>
-				</li>
-				<li class="popular__items mix sandwich">
-					<article class="product-card">
-						<img class="product-card__img" src="images/popular/photo-4.svg" width="140" height="140"
-							alt="фото,черный гамбургер">
-						<h3 class="product-card__text">Черный гамбургер</h3>
-						<span class="product-card__price">199 pуб</span>
-						<button class="button" type="button">В корзину</button>
-					</article>
-				</li>
-			</ul>
 
+
+					<li class="popular__items mix sandwich">
+						<article class="product-card">
+							<img class="product-card__img" src="images/popular/photo-4.svg" width="140" height="140"
+								alt="фото,черный гамбургер">
+							<h3 class="product-card__text">Черный гамбургер</h3>
+							<span class="product-card__price">199 pуб</span>
+							<button class="button" type="button">В корзину</button>
+						</article>
+					</li>
+
+					<li class="popular__items mix sandwich">
+						<article class="product-card">
+							<img class="product-card__img" src="images/popular/photo-4.svg" width="140" height="140"
+								alt="фото,черный гамбургер">
+							<h3 class="product-card__text">Черный гамбургер</h3>
+							<span class="product-card__price">199 pуб</span>
+							<button class="button" type="button">В корзину</button>
+						</article>
+					</li>
+
+					<li class="popular__items mix sandwich">
+						<article class="product-card">
+							<img class="product-card__img" src="images/popular/photo-4.svg" width="140" height="140"
+								alt="фото,черный гамбургер">
+							<h3 class="product-card__text">Черный гамбургер</h3>
+							<span class="product-card__price">199 pуб</span>
+							<button class="button" type="button">В корзину</button>
+						</article>
+					</li>
+					<li class="popular__items mix sandwich">
+						<article class="product-card">
+							<img class="product-card__img" src="images/popular/photo-4.svg" width="140" height="140"
+								alt="фото,черный гамбургер">
+							<h3 class="product-card__text">Черный гамбургер</h3>
+							<span class="product-card__price">199 pуб</span>
+							<button class="button" type="button">В корзину</button>
+						</article>
+					</li>
+				</ul>
+
+				<div class="pagination">
+					<ul class="pagination-list">
+						<li class="pagination-item">
+							<a class="pagination-arrows pagination-arrows--prev" href="#"></a>
+						</li>
+						<li class="pagination-item">
+							<a class="pagination-link--active" href="#">1</a>
+						</li>
+						<li class="pagination-item">
+							<a class="pagination-link" href="#">2</a>
+						</li>
+						
+						<li class="pagination-item">
+						<span class="pagination-span">...</span>
+					</li>
+						<li class="pagination-item">
+							<a class="pagination-link" href="#">9</a>
+						</li>
+						<li class="pagination-item">
+							<a class="pagination-link" href="#">10</a>
+						</li>
+						<li class="pagination-item">
+							<a class="pagination-arrows pagination-arrows--next" href="#"></a>
+						</li>
+					</ul>
+				</div>
+
+			</div>
 		</div>
-	</div>
-	</div>
+
 </section>
