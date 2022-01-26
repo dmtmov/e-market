@@ -16,4 +16,12 @@
 	&:active {
 		opacity: 0.5;
 	}
+
+	@include max-width($mobile) {
+		&__img {
+			width: 115px;
+			height: 23px;
+
+		}
+	}
 }

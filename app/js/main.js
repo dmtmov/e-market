@@ -1,7 +1,7 @@
-let mixer = mixitup('.popular__inner');
-
+// let mixer = mixitup('.popular__inner');
 
 $(function () {
+
 	$('.review-slider__inner').slick({
 		prevArrow: '<button type="button" class="slick-prev slick-arrow review__slick--prev"><svg class="review__slick"><use xlink: href ="images/sprite.svg#slider-prev"></use></svg></button>',
 
@@ -25,4 +25,15 @@ $(function () {
 
 	$('.catalog-choice').styler();
 
+
+
+	// const swiper = new Swiper('.swiper-container', {
+	// 	spaceBetween: 5,
+	// });
+
+
 });
+
+
+
+let mixer = mixitup('.popular__inner');

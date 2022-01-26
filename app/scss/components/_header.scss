@@ -13,4 +13,11 @@
 		padding: 60px 0;
 	}
 
+	@include max-width($tablets) {
+
+		&__menu {
+			padding: 25px 0;
+		}
+	}
+
 }
