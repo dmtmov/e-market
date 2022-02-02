@@ -2,6 +2,11 @@
 	margin-right: 89px;
 	margin-bottom: 14px;
 
+	@include max-width($desktop) {
+		order: 3;
+		margin-right: 0;
+	}
+
 	&__item {
 		margin-bottom: 15px;
 		font-size: 14px;
@@ -31,6 +36,5 @@
 		&--message {
 			background-image: url('../images/footer/footer-message.svg');
 		}
-
 	}
 }

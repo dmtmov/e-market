@@ -65,5 +65,13 @@
 				fill: $orange;
 			}
 		}
+
+		@include max-width($desktop) {
+			margin-bottom: 90px;
+		}
+
+		@include max-width($mobile) {
+			margin-bottom: 30px;
+		}
 	}
 }

@@ -53,10 +53,7 @@
 		background-image: url('../images/catalog.svg');
 		background-repeat: no-repeat;
 		border: none;
-
-
 	}
-
 
 	.jq-selectbox li:hover,
 	.jq-selectbox li.selected {
@@ -64,12 +61,10 @@
 		color: $orange;
 	}
 
-
 	&__inner {
 		display: flex;
 		justify-content: space-between;
 		margin-bottom: 60px;
-
 	}
 
 	&__popular {
@@ -81,7 +76,6 @@
 		max-height: 923px;
 		width: 100%;
 		height: 100%;
-
 	}
 
 	&__content {
@@ -165,7 +159,6 @@
 		}
 	}
 
-
 	.irs--flat .irs-handle>i:first-child {
 		display: none;
 	}
@@ -182,7 +175,6 @@
 		display: none;
 	}
 }
-
 
 .filter-offers {
 	&__box {
@@ -201,7 +193,6 @@
 
 	&__input {
 		display: none;
-
 
 		&:checked+.filter-offers__checkbox {
 			background-image: url('../images/offers.svg');

@@ -1,6 +1,28 @@
 .delivery {
 	&__inner {
 		@extend %position-evenly;
+
+		@include max-width($desktop) {
+			position: relative;
+			justify-content: center;
+
+			&::before {
+				content: "";
+				width: 349px;
+				height: 462px;
+				position: absolute;
+				background-image: url('../images/delivery/delivery.png');
+				background-repeat: no-repeat;
+				background-size: contain;
+				z-index: -1;
+				opacity: 0.2;
+
+				@include max-width($sm) {
+					width: 349px;
+					height: 462px;
+				}
+			}
+		}
 	}
 
 	&__image {
@@ -8,11 +30,20 @@
 		height: 585px;
 		margin-right: 50px;
 		@extend %background;
+
+		@include max-width($desktop) {
+			display: none;
+		}
 	}
 
 	&__content {
 		max-width: 470px;
+		width: 100%;
 		margin-bottom: 10px;
+
+		// @include max-width($sm) {
+		// 	max-width: 100%;
+		// }
 	}
 
 	&__title {
@@ -25,6 +56,10 @@
 		margin-bottom: 30px;
 		word-wrap: break-word;
 		@include line-clamp(20, 1.5, 5);
+
+		@include max-width($mobile) {
+			font-size: 16px;
+		}
 	}
 
 	&__list {
@@ -36,11 +71,16 @@
 		padding-left: 65px;
 		position: relative;
 
-		// @include w(992){
-		// 	padding-left: 44px;
-		// }
+		@include max-width($mobile) {
+			font-size: 18px;
+		}
+
 		&:not(:last-child) {
 			margin-bottom: 20px;
+
+			@include max-width($mobile) {
+				margin-bottom: 18px;
+			}
 		}
 
 		&::before {

@@ -31,9 +31,38 @@ $(function () {
 	// 	spaceBetween: 5,
 	// });
 
+	if (window.matchMedia("(max-width: 992px)").matches) {
+		$('.restaurants__items').slick({
+			dots: true,
+			slidesToShow: 2,
+			slidesToScroll: 2,
+			arrows: false,
+			responsive: [{
+					breakpoint: 768,
+					settings: {
+
+						slidesToShow: 1,
+						slidesToScroll: 1,
+						infinite: true,
+						dots: true
+					}
+				},
+				// {
+				// 	breakpoint: 576,
+				// 	settings: {
+				// 		slidesToShow: 1,
+				// 		slidesToScroll: 3,
+				// 		infinite: true,
+				// 		dots: true
+				// 	},
+				// }
+			]
+		});
+	}
+
+
 
 });
-
 
 
 let mixer = mixitup('.popular__inner');

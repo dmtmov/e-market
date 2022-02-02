@@ -10,6 +10,12 @@
 	box-shadow: 0 0 0 1px $shadow;
 	transition: box-shadow 0.7s ease-in-out, opacity 0.5s ease;
 
+	@include max-width($sm) {
+		grid-template-columns: repeat(170px, 1fr);
+		grid-gap: 5px;
+		margin-right: 15px;
+	}
+
 	&:hover {
 		@extend %box-shadow-orange;
 	}
@@ -25,6 +31,7 @@
 		font-weight: normal;
 		margin-bottom: 18px;
 		@include line-clamp(15, 1.2, 2);
+
 		// max-width: 180px;
 		// height: 36px;
 		// font-size: 15px;

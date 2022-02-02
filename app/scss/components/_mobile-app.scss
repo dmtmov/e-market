@@ -3,6 +3,10 @@
 
 	&__inner {
 		@extend %position;
+
+		@include max-width($tablet) {
+			width: 100%;
+		}
 	}
 
 	&__content {
@@ -13,12 +17,21 @@
 
 	&__title {
 		margin-bottom: 45px;
+
+		@include max-width($sm) {
+			margin-bottom: 30px;
+		}
 	}
 
 	&__text {
 		margin-bottom: 30px;
 		opacity: 0.9;
 		@include line-clamp(20, 1.5, 4);
+
+		@include max-width($sm) {
+			font-size: 14px;
+			margin-bottom: 15px;
+		}
 	}
 
 	&__list {
@@ -35,5 +48,9 @@
 		width: 570px;
 		height: 380px;
 		@extend %background;
+
+		@include max-width($tablet) {
+			display: none;
+		}
 	}
 }
