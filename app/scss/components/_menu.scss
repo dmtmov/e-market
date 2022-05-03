@@ -87,7 +87,7 @@
 	}
 }
 
-@include max-width($tablets) {
+@include max-width($tablet) {
 	.menu {
 		margin-right: 0;
 		position: absolute;

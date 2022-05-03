@@ -74,7 +74,7 @@
 		height: 660px;
 		@extend %background;
 
-		@include max-width($tablet) {
+		@include max-width($desktop) {
 			display: none;
 			// background-image: url('../images/hero/hero.png');
 			// width: 360px;

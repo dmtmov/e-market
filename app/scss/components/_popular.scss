@@ -94,16 +94,29 @@
 	&__inner {
 		width: 100%;
 		display: grid;
-		grid-template-columns: repeat(5, 1fr);
-		grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
-		grid-gap: 25px;
+		grid-template-columns: repeat(5, 210px);
+		grid-template-rows: repeat(2, 1fr);
+		gap: 25px;
+
 		margin-bottom: 60px;
-		justify-items: center;
+
+		@include max-width($desktop) {
+			grid-template-columns: repeat(4, 1fr);
+		}
+
+		@include max-width($tablet) {
+			grid-template-columns: repeat(3, 1fr);
+		}
+
+		@include max-width($mobile) {
+			grid-template-columns: repeat(2, 1fr);
+			margin-bottom: 30px;
+		}
 
 		@include max-width($sm) {
 			grid-template-columns: repeat(2, 1fr);
-			grid-gap: 10px;
-			margin-bottom: 30px;
+			gap: 10px;
+
 		}
 	}
 
