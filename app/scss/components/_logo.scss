@@ -1,8 +1,15 @@
 .logo {
+
+	@include max-width($mobile){
+		margin-left: 41px;
+		padding-right: 85px;
+	}  
+
 	&__img {
 		object-fit: cover;
 		transition: box-shadow 0.7s ease-in-out, opacity 0.5s ease;
 	}
+
 
 	&:hover {
 		opacity: 0.8;
@@ -23,5 +30,16 @@
 			height: 23px;
 
 		}
+	}
+	@include max-width($sm) {
+		&__img {
+			width: 200px;
+			height: 39px;
+
+		}
+	}
+
+	&__close{
+		background-image: url("");
 	}
 }

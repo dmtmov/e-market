@@ -60,7 +60,13 @@ $(function () {
 		});
 	}
 
+	// форма поиска с лупы 
 
+	// $("#search__container").hover(function () { 
+	// 		$(this).show();
+	// 	}, function () {
+	// 		$(this).hide();
+	// 	});
 
 });
 

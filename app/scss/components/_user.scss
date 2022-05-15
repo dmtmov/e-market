@@ -21,6 +21,16 @@
 		&:not(:last-child) {
 			margin-right: 11px;
 		}
+		&.search{
+			position: relative;
+
+			.form__search{
+				position: absolute;
+				left: -204px;
+				top: 0px;
+				visibility: hidden
+			} 
+		}
 	}
 
 	&__btn {

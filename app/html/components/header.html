@@ -31,7 +31,11 @@
 					</li>
 				</ul>
 				<ul class="user">
-					<li class="user__item">
+					<li class="user__item search">
+						<form class="form form__search" id="search__container">
+							<label for="search" aria-label="Поиск"></label>
+							<input class="form__input" type="search" name="search" id="search" placeholder="Поиск..." required>
+						</form>
 						<button class="user__btn" type="button">
 							<svg class="user__img user__img--search">
 								<use xlink:href="images/sprite.svg#search"></use>
@@ -50,11 +54,6 @@
 					</li>
 				</ul>
 			</div>
-
-			<!-- <form class="form form__search">
-				<label for="search" aria-label="Поиск"></label>
-				<input class="form__input" type="search" name="search" id="search" placeholder="Поиск..." required>
-			</form> -->
 
 		</nav>
 	</div>

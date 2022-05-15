@@ -83,18 +83,24 @@
 	}
 
 	&__item {
-		display: none;
+		&.search {
+			position: relative;
+		}
 	}
 }
 
-@include max-width($tablet) {
+@include max-width($sm) {
 	.menu {
-		margin-right: 0;
-		position: absolute;
-		top: 150px;
-		left: 15px;
+		// margin-right: 0;
+		// position: absolute;
+		// top: 150px;
+		// left: 15px;
 		flex-direction: column;
-		align-items: start;
+		align-items: flex-start;
+		margin-bottom: 40px;
+	
+
+
 
 		&__burger {
 			display: block;

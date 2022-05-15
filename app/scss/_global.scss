@@ -68,11 +68,11 @@ body {
 
 
 
-	@include max-width($mobile) {
+	@include max-width($tablet) {
 		font-size: 30px;
 	}
 
-	@include max-width($sm) {
+	@include max-width($mobile) {
 		font-size: 24px;
 	}
 }
