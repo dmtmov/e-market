@@ -1,7 +1,30 @@
-@import'vars';
-@import'fonts';
-@import'global';
 @import'reset';
+@import'fonts';
+@import'vars';
+@import'mixins';
+@import'libs';
+@import'global';
+
+@import'components/mobile-btn';
+
+@import'components/menu';
+@import'components/header';
+@import'components/logo';
+@import'components/user';
+@import'components/product-card';
+@import'components/product-item';
+@import'components/mobile-app';
+@import'components/footer';
+@import'components/contacts';
+@import'components/form';
+@import'components/social';
+@import'components/review-slider';
+@import'components/popular';
+@import'components/restaurants';
+@import'components/breadcrumb';
+@import'components/catalog';
+@import'components/stocks';
 
 
-@import'media';
+@import'page-index/hero';
+@import'page-index/delivery';

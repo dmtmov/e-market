@@ -1,0 +1,45 @@
+.logo {
+
+	@include max-width($mobile){
+		margin-left: 41px;
+		padding-right: 85px;
+	}  
+
+	&__img {
+		object-fit: cover;
+		transition: box-shadow 0.7s ease-in-out, opacity 0.5s ease;
+	}
+
+
+	&:hover {
+		opacity: 0.8;
+	}
+
+	&:focus {
+		border-radius: 5px;
+		@extend %box-shadow-07;
+	}
+
+	&:active {
+		opacity: 0.5;
+	}
+
+	@include max-width($mobile) {
+		&__img {
+			width: 115px;
+			height: 23px;
+
+		}
+	}
+	@include max-width($sm) {
+		&__img {
+			width: 200px;
+			height: 39px;
+
+		}
+	}
+
+	&__close{
+		background-image: url("");
+	}
+}

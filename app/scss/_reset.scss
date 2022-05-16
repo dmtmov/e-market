@@ -48,11 +48,17 @@ select {
 	font: inherit;
 }
 
-// * {
-// 	outline: transparent;
-// }
+* {
+	outline: transparent;
+}
 
 a {
 	text-decoration: none;
 	color: inherit;
+}
+
+button {
+	background-color: transparent;
+	border: transparent;
+	cursor: pointer;
 }

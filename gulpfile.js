@@ -13,6 +13,29 @@ const uglify = require('gulp-uglify');
 const imagemin = require('gulp-imagemin');
 const del = require('del');
 const browserSync = require('browser-sync').create();
+const fileInclude = require('gulp-file-include');
+
+const svgSprite = require('gulp-svg-sprite');
+const replace = require('gulp-replace');
+const cheerio = require('gulp-cheerio');
+
+
+
+
+
+
+
+
+const htmlInclude = () => {
+	return src(['app/html/*.html'])
+		.pipe(fileInclude({
+			prefix: '@',
+			basepath: '@file',
+		}))
+		.pipe(dest('app'))
+		.pipe(browserSync.stream());
+}
+
 
 
 function browsersync() {
@@ -20,7 +43,7 @@ function browsersync() {
 		server: {
 			baseDir: 'app/'
 		},
-		notofy: false
+		notify: false
 	})
 }
 
@@ -43,13 +66,45 @@ function styles() {
 function scripts() {
 	return src([
 			'node_modules/jquery/dist/jquery.js',
+			'node_modules/mixitup/dist/mixitup.min.js',
+			'node_modules/slick-carousel/slick/slick.js',
+			'node_modules/ion-rangeslider/js/ion.rangeSlider.js',
+			'node_modules/jquery-form-styler/dist/jquery.formstyler.js',
+			'node_modules/swiper/swiper-bundle.js',
 			'app/js/main.js'
+
 		])
 		.pipe(concat('main.min.js'))
 		.pipe(uglify())
 		.pipe(dest('app/js'))
 		.pipe(browserSync.stream())
 }
+
+
+const svgSprites = () => {
+	return src(['app/images/svg/**.svg'])
+		.pipe(cheerio({
+			run: function ($) {
+				$('[fill]').removeAttr('fill');
+				$('[stroke]').removeAttr('stroke');
+				$('[style]').removeAttr('style');
+			},
+			parserOptions: {
+				xmlMode: true
+			}
+		}))
+		.pipe(replace('&gt;', '>'))
+		.pipe(svgSprite({
+			mode: {
+				stack: {
+					sprite: "../sprite.svg"
+				}
+			},
+		}))
+		.pipe(dest('app/images/'))
+}
+
+
 
 function images() {
 	return src('app/images/**/*.*')
@@ -94,9 +149,15 @@ function watching() {
 	watch(['app/scss/**/*.scss'], styles);
 	watch(['app/**/*.js', '!app/js/main.min.js'], scripts);
 	watch(['app/**/*.html']).on('change', browserSync.reload);
+	watch(['app/html/**/*.html'], htmlInclude);
+	watch(['app/scss/**/*.scss']).on('change', browserSync.reload);
+
+	watch(['app/images/svg/**.svg'], svgSprites);
+	watch(['app/images/svg/*.svg']).on('change', browserSync.reload);
 }
 
-
+exports.htmlInclude = htmlInclude;
+exports.svgSprites = svgSprites;
 exports.styles = styles;
 exports.scripts = scripts;
 exports.browsersync = browsersync;
@@ -104,4 +165,4 @@ exports.watching = watching;
 exports.images = images;
 exports.cleanDist = cleanDist;
 exports.build = series(cleanDist, images, build);
-exports.default = parallel(styles, scripts, browsersync, watching);
+exports.default = parallel(styles, scripts, svgSprites, htmlInclude, browsersync, watching);

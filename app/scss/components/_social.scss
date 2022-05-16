@@ -1,0 +1,77 @@
+.social {
+	display: flex;
+
+	&__item {
+		&:not(:last-child) {
+			margin-right: 13px;
+		}
+	}
+
+	&__img {
+		position: absolute;
+		fill: $default;
+		top: 10px;
+		left: 10px;
+		transition: fill 0.8s ease;
+
+		&--facebook {
+			width: 10px;
+			height: 21px;
+			top: 9px;
+			left: 14px;
+		}
+
+		&--twitter {
+			width: 21px;
+			height: 17px;
+		}
+
+		&--instagram {
+			width: 20px;
+			height: 20px;
+		}
+	}
+
+	&__link {
+		position: relative;
+		display: block;
+		width: 39px;
+		height: 39px;
+		transition: box-shadow 0.7s ease-in-out, color 0.7s, background-color 0.7s, opacity 0.7s ease;
+		background-color: $shadow;
+		border-radius: 50%;
+
+		&:hover {
+			background-color: $orange;
+
+			.social__img {
+				fill: $white;
+			}
+		}
+
+		&:focus {
+			background-color: $pink;
+			@extend %box-shadow-07;
+
+			.social__img {
+				fill: $default;
+			}
+		}
+
+		&:active {
+			background-color: $pink;
+
+			.social__img {
+				fill: $orange;
+			}
+		}
+
+		@include max-width($desktop) {
+			margin-bottom: 90px;
+		}
+
+		@include max-width($mobile) {
+			margin-bottom: 30px;
+		}
+	}
+}

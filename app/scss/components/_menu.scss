@@ -1,0 +1,169 @@
+.menu {
+	// &__btn {
+	// 	display: none;
+	// }
+
+	margin-right: 52px;
+	display: flex;
+	align-items: center;
+
+	&__burger {
+		display: block;
+		position: relative;
+		width: 30px;
+		height: 20px;
+		z-index: 4;
+		padding: 20px;
+
+
+
+		& span {
+			position: absolute;
+			background-color: $title;
+			left: 6px;
+			top: 10px;
+			width: 30px;
+			height: 2px;
+			top: 18px;
+			transition: all 0.3s ease 0s;
+		}
+
+		&:before,
+		&:after {
+			content: " ";
+			background-color: $title;
+			position: absolute;
+			width: 30px;
+			height: 2px;
+			left: 6px;
+			transition: all 0.3s ease 0s;
+		}
+
+		&:before {
+			top: 7px;
+		}
+
+		&:after {
+			bottom: 10px;
+		}
+
+		&--active span {
+			transform: scale(0);
+		}
+
+		&--active::before {
+			transform: rotate(45deg);
+			top: 21px;
+		}
+
+		&--active::after {
+			transform: rotate(-45deg);
+			bottom: 17px;
+		}
+
+		.menu__burger {
+			display: none;
+		}
+	}
+
+	&__item {
+		&:not(:last-child) {
+			margin-right: 45px;
+		}
+	}
+
+	&__link {
+		font-size: 18px;
+		line-height: 2.1;
+		color: $default;
+
+		&--home {
+			color: $orange;
+		}
+	}
+
+	&__item {
+		&.search {
+			position: relative;
+		}
+	}
+}
+
+@include max-width($sm) {
+	.menu {
+		// margin-right: 0;
+		// position: absolute;
+		// top: 150px;
+		// left: 15px;
+		flex-direction: column;
+		align-items: flex-start;
+		margin-bottom: 40px;
+	
+
+
+
+		&__burger {
+			display: block;
+			position: relative;
+			width: 30px;
+			height: 20px;
+			z-index: 4;
+			padding: 20px;
+			order: 1;
+
+			& span {
+				position: absolute;
+				background-color: $title;
+				left: 6px;
+				top: 10px;
+				width: 30px;
+				height: 2px;
+				top: 18px;
+				transition: all 0.3s ease 0s;
+			}
+
+			&:before,
+			&:after {
+				content: " ";
+				background-color: $title;
+				position: absolute;
+				width: 30px;
+				height: 2px;
+				left: 6px;
+				transition: all 0.3s ease 0s;
+			}
+
+			&:before {
+				top: 7px;
+			}
+
+			&:after {
+				bottom: 10px;
+			}
+
+			&--active span {
+				transform: scale(0);
+			}
+
+			&--active::before {
+				transform: rotate(45deg);
+				top: 21px;
+			}
+
+			&--active::after {
+				transform: rotate(-45deg);
+				bottom: 17px;
+			}
+
+			.menu__burger {
+				display: none;
+			}
+		}
+
+		&__item {
+			&:not(:last-child) {
+				margin-right: 0px;
+			}
+		}
+	}
+}
