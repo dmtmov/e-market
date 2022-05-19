@@ -1,9 +1,8 @@
 .logo {
 
-	@include max-width($mobile){
-		margin-left: 41px;
-		padding-right: 85px;
-	}  
+	@include max-width($mobile) {
+		
+	}
 
 	&__img {
 		object-fit: cover;
@@ -31,6 +30,7 @@
 
 		}
 	}
+
 	@include max-width($sm) {
 		&__img {
 			width: 200px;
@@ -39,7 +39,4 @@
 		}
 	}
 
-	&__close{
-		background-image: url("");
-	}
 }

@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAEC,AAAD,mBAAQ,CAAA;EACP,SAAS,EAAC,KAAM;EAChB,YAAY,EAAE,IAAI;CAClB",
+    "sources": [
+        "../app/scss/components/mobile-btn2.scss"
+    ],
+    "names": [],
+    "file": "mobile-btn2.css"
+}

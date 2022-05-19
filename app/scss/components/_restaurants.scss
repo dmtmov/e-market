@@ -12,9 +12,10 @@
 	}
 
 	&__items {
-		display: grid;
+		display: flex;
+		// display: grid;
 		// grid-template-columns: repeat(3, 1fr);
-		// grid-gap: 22px;
+		grid-gap: 22px;
 
 		// @include max-width($tablet) {
 		// 	display: block;
