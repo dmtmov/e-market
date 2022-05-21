@@ -13,14 +13,16 @@
 
 	&__items {
 		display: flex;
-		// display: grid;
-		// grid-template-columns: repeat(3, 1fr);
+		flex-wrap: wrap;
 		grid-gap: 22px;
 
-		// @include max-width($tablet) {
-		// 	display: block;
-		// 	justify-content: space-between;
-		// }
+		@include max-width($desktop) {
+			justify-content: space-evenly;
+		}
+
+		@include max-width($tablet) {
+			display: block;
+		}
 
 
 		.slick-dots {

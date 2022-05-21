@@ -1,6 +1,6 @@
 {
     "version": 3,
-    "mappings": "AAEC,AAAD,mBAAQ,CAAA;EACP,SAAS,EAAC,KAAM;EAChB,YAAY,EAAE,IAAI;CAClB",
+    "mappings": "",
     "sources": [
         "../app/scss/components/mobile-btn2.scss"
     ],
