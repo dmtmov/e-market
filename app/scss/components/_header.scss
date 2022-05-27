@@ -12,11 +12,8 @@
 		margin: 0 auto;
 		padding: 60px 0;
 	}
+}
 
-	@include max-width($tablet) {
-		&__menu {
-			padding: 25px 0;
-		}
-	}
-
+.menu__burger {
+	display: none;
 }

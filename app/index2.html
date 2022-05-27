@@ -19,7 +19,117 @@
 </head>
 
 <body>
+<section class="mobile-btn2">
 
+	<div class="mobile-btn2__home2">
+
+		<div class="mobile-btn2__navigation">
+
+			<a class="logo mobile-btn2__logo" href="#">
+				<img class="logo__img" src="images/logo.svg" width="202" height="40" alt="Логотип">
+			</a>
+
+			<button class="mobile-btn__close mobile-btn2__close2" type="button">
+				<svg class="mobile-btn__img mobile-btn2__img2">
+					<use xlink:href="images/sprite.svg#close"></use>
+				</svg>
+				<span class="sr-only">Закрыть поиск</span>
+			</button>
+		</div>
+
+		<div class="mobile-btn__filter">
+
+			<div class="mobile-btn__catalog">
+				<div class="filter-categories filter-items">
+					<h3 class="filter-title">Категории</h3>
+					<ul class="filter-categories__list">
+
+						<li class="filter-categories__item">
+							<a class="filter-categories__link animation-text" href="#">Бургеры</a>
+						</li>
+						<li class="filter-categories__item">
+							<a class="filter-categories__link animation-text" href="#">Пицца</a>
+						</li>
+						<li class="filter-categories__item">
+							<a class="filter-categories__link animation-text" href="#">Сендвичи</a>
+						</li>
+						<li class="filter-categories__item">
+							<a class="filter-categories__link animation-text" href="#">Азиатская кухня</a>
+						</li>
+						<li class="filter-categories__item">
+							<a class="filter-categories__link animation-text" href="#">Сеты</a>
+						</li>
+						<li class="filter-categories__item">
+							<a class="filter-categories__link animation-text" href="#">Европейская кухня</a>
+						</li>
+						<li class="filter-categories__item">
+							<a class="filter-categories__link animation-text" href="#">Напитки</a>
+						</li>
+						<li class="filter-categories__item">
+							<a class="filter-categories__link animation-text" href="#">Алкоголь</a>
+						</li>
+					</ul>
+				</div>
+
+				<div class="filter-offers filter-items">
+					<h3 class="filter-title">Предложения</h3>
+					<div class="filter-offers__box">
+
+						<form class="filter-offers__form" action="#">
+
+							<label class="filter-offers__label">
+								<input class="filter-offers__input" type="checkbox" name="checkbox" id="checkbox1"
+									placeholder="#" required>
+								<span class="filter-offers__checkbox"></span>
+								<span class="filter-offers__text">Со скидкой </span>
+							</label>
+
+							<label class="filter-offers__label">
+								<input class="filter-offers__input" type="checkbox" name="checkbox" id="checkbox2"
+									placeholder="#" required>
+								<span class="filter-offers__checkbox"></span>
+								<span class="filter-offers__text">Новинка</span>
+							</label>
+
+							<label class="filter-offers__label">
+								<input class="filter-offers__input" type="checkbox" name="checkbox" id="checkbox3"
+									placeholder="#" required>
+								<span class="filter-offers__checkbox"></span>
+								<span class="filter-offers__text">Хит</span>
+							</label>
+						</form>
+					</div>
+				</div>
+
+
+				<div class="filter-price filter-items">
+					<h3 class="filter-title">Цена</h3>
+
+					<form class="filter-price__form" action="#">
+						<div class="filter-price__box">
+
+							<span class="filter-price__span">от</span>
+							<input class="filter-price__btn filter-price__form" type="val" name="price" id="price"
+								placeholder="100" required>
+							<span class="filter-price__span">₽</span>
+
+							<span class="filter-price__span">до</span>
+							<input class="filter-price__btn filter-price__to" type="val" name="price" id="price"
+								placeholder="1000" required>
+							<span class="filter-price__span">₽</span>
+						</div>
+
+						<div class="filter-price__scale">
+							<input class="filter-price__input" type="text" data-min="100" data-max="1000" data-form="200"
+								data-to="1000">
+							<label for="priсe" aria-label="Выбор суммы"></label>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
 <header class="header">
 	<div class="container">
 		<nav class="header__menu">

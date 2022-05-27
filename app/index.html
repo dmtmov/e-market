@@ -19,7 +19,82 @@
 </head>
 
 <body>
+<section class="mobile-btn">
 
+	<div class="mobile-btn__home">
+
+		<div class="mobile-btn__navigation">
+
+			<a class="mobile-btn__logo" href="#">
+				<img class="mobile-btn__logo-img" src="images/logo.svg" width="202" height="40" alt="Логотип">
+			</a>
+
+			<button class="mobile-btn__close" type="button">
+				<svg class="mobile-btn__img">
+					<use xlink:href="images/sprite.svg#close"></use>
+				</svg>
+				<span class="sr-only">Закрыть поиск</span>
+			</button>
+		</div>
+
+		<ul class="mobile-btn__menu">
+			<li class="menu__item">
+				<a class="menu__link menu__link--home animation-text" href="#">
+					Главная
+				</a>
+			</li>
+			<li class="menu__item">
+				<a class="menu__link animation-text" href="http://localhost:3000/index2.html#">
+					Блюда
+				</a>
+			</li>
+			<li class="menu__item">
+				<a class="menu__link animation-text" href="#">
+					Контакты
+				</a>
+			</li>
+		</ul>
+
+		<ul class="contacts">
+			<li class="contacts__item">
+				<a class="contacts__link contacts__link--location animation-text" href="#">ул. Смирнова 2/3</a>
+			</li>
+			<li class="contacts__item">
+				<a class="contacts__link contacts__link--tel animation-text" href="#">79068057043</a>
+			</li>
+			<li class="contacts__item">
+				<a class="contacts__link contacts__link--message animation-text" href="#">support@sfood.com</a>
+			</li>
+		</ul>
+
+		<ul class="social social-btn__menu">
+			<li class="social__item">
+				<a class="social__link" target="_blank" href="#">
+					<svg class="social__img social__img--facebook ">
+						<use xlink:href="images/sprite.svg#ic-facebook"></use>
+					</svg>
+					<span class="sr-only">Перейти в фейсбук</span>
+				</a>
+			</li>
+			<li class="social__item">
+				<a class="social__link" target="_blank" href="#">
+					<svg class="social__img social__img--twitter">
+						<use xlink:href="images/sprite.svg#ic-twitter"></use>
+					</svg>
+					<span class="sr-only">Перейти в твиттер</span>
+				</a>
+			</li>
+
+			<li class="social__item">
+				<a class="social__link social__link--icon" target="_blank" href="#">
+					<svg class="social__img social__img--instagram">
+						<use xlink:href="images/sprite.svg#ic-instagram"></use>
+					</svg>
+					<span class="sr-only">Перейти в инстаграм</span>
+				</a>
+		</ul>
+	</div>
+</section>
 <header class="header">
 	<div class="container">
 		<nav class="header__menu">
