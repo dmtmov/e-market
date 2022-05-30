@@ -1,0 +1,75 @@
+.mobile-btn {
+	background-color: rgba(0, 0, 0, 0.15);
+
+	&__menu {
+		display: block;
+		flex-direction: column;
+		align-items: start;
+		margin-bottom: 40px;
+		padding: 25px 0;
+		border-top: 1px solid #EEEFF3;
+		border-bottom: 1px solid #EEEFF3;
+	}
+
+	&__home {
+		max-width: 300px;
+		background-color: $white;
+		padding-left: 15px;
+	}
+
+	&__navigation {
+		display: flex;
+		padding-top: 25px;
+		margin-bottom: 25px;
+
+	}
+
+	&__logo {
+		margin-right: 31px;
+
+		&-img {
+			width: 200px;
+			height: 39px;
+		}
+	}
+
+	&__close {
+		padding: 20px 20px;
+		border-radius: 6px;
+		transition: box-shadow 0.5s ease-in-out, color 0.5s, background-color 0.5s, opacity 0.7s ease;
+
+		&:hover {
+			background-color: $orange;
+
+			.mobile-btn__img {
+				fill: $white;
+			}
+		}
+
+		&:focus {
+			background-color: $pink;
+			@extend %box-shadow-07;
+			border-radius: 5px;
+
+			.mobile-btn__img {
+				fill: $title;
+			}
+		}
+
+		&:active {
+			box-shadow: none;
+		}
+	}
+
+	&__img {
+		fill: $title;
+		transition: box-shadow 0.7s ease-in-out, color 0.7s, background-color 0.7s, opacity 0.7s ease;
+		position: absolute;
+		display: block;
+		left: 257px;
+		top: 35px;
+		width: 18px;
+		height: 18px;
+	}
+
+}

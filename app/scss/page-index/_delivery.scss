@@ -4,22 +4,32 @@
 
 		@include max-width($desktop) {
 			position: relative;
-			justify-content: center;
-
+			justify-content: flex-end;
+			
+			
+		
 			&::before {
 				content: "";
-				width: 349px;
-				height: 462px;
+				width: 315px;
+				height: 455px;
+				left:50px;
 				position: absolute;
 				background-image: url('../images/delivery/delivery.png');
 				background-repeat: no-repeat;
 				background-size: contain;
 				z-index: -1;
-				opacity: 0.2;
 
-				@include max-width($sm) {
+				@include max-width($tablet){
+					left:0px;
+				}
+			
+			
+
+				@include max-width($mobile) {
 					width: 349px;
 					height: 462px;
+						opacity: 0.2;
+						z-index: -1;
 				}
 			}
 		}
@@ -41,9 +51,12 @@
 		width: 100%;
 		margin-bottom: 10px;
 
-		// @include max-width($sm) {
-		// 	max-width: 100%;
-		// }
+		@include max-width($tablet){
+			max-width: 420px;
+		}
+		@include max-width($mobile){
+			max-width: 348px;
+		}
 	}
 
 	&__title {
@@ -56,6 +69,10 @@
 		margin-bottom: 30px;
 		word-wrap: break-word;
 		@include line-clamp(20, 1.5, 5);
+
+		@include max-width($tablet){
+			font-size:18px ;
+		}
 
 		@include max-width($mobile) {
 			font-size: 16px;
@@ -71,6 +88,9 @@
 		padding-left: 65px;
 		position: relative;
 
+		@include max-width($tablet){
+			font-size:20px ;
+		}
 		@include max-width($mobile) {
 			font-size: 18px;
 		}

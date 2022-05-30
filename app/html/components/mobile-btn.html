@@ -1,23 +1,22 @@
 <section class="mobile-btn">
 
-
 	<div class="mobile-btn__home">
 
 		<div class="mobile-btn__navigation">
-			<div class="mobile-btn__close">
 
-				<svg class="close">
-					<use xlink:href="images/sprite.svg#close-btn.svg"></use>
-				</svg>
-				<span class="sr-only">Закрыть меню</span>
-
-			</div>
-			<a class="logo mobile-btn__logo" href="#">
-				<img class="logo__img" src="images/logo.svg" width="202" height="40" alt="Логотип">
+			<a class="mobile-btn__logo" href="#">
+				<img class="mobile-btn__logo-img" src="images/logo.svg" width="202" height="40" alt="Логотип">
 			</a>
+
+			<button class="mobile-btn__close" type="button">
+				<svg class="mobile-btn__img">
+					<use xlink:href="images/sprite.svg#close"></use>
+				</svg>
+				<span class="sr-only">Закрыть поиск</span>
+			</button>
 		</div>
 
-		<ul class="menu">
+		<ul class="mobile-btn__menu">
 			<li class="menu__item">
 				<a class="menu__link menu__link--home animation-text" href="#">
 					Главная
@@ -34,7 +33,6 @@
 				</a>
 			</li>
 		</ul>
-
 
 		<ul class="contacts">
 			<li class="contacts__item">
@@ -75,5 +73,4 @@
 				</a>
 		</ul>
 	</div>
-
 </section>

@@ -12,14 +12,17 @@
 	}
 
 	&__items {
-		display: grid;
-		// grid-template-columns: repeat(3, 1fr);
-		// grid-gap: 22px;
+		display: flex;
+		flex-wrap: wrap;
+		grid-gap: 22px;
 
-		// @include max-width($tablet) {
-		// 	display: block;
-		// 	justify-content: space-between;
-		// }
+		@include max-width($desktop) {
+			justify-content: space-evenly;
+		}
+
+		@include max-width($tablet) {
+			display: block;
+		}
 
 
 		.slick-dots {

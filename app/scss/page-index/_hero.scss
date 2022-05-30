@@ -1,15 +1,45 @@
 .hero {
 	&__inner {
 		@extend %position;
+
+
+		@include max-width($desktop) {
+			position: relative;
+
+			&::before {
+				content: "";
+				background-image: url('../images/hero/hero.png');
+				width: 345px;
+				height: 385px;
+				right: 0px;
+				position: absolute;
+				background-repeat: no-repeat;
+				background-size: contain;
+
+			}
+		}
+
+	@include max-width($mobile) {
+			&::before {
+				width: 255px;
+				height: 300px;
+				z-index: -1;
+				opacity: 0.2;
+			}
+		}
 	}
 
 	&__content {
 		justify-content: space-between;
 		max-width: 450px;
 		margin-bottom: 12px;
-		z-index: 100;
-	}
+		
 
+
+		@include max-width($tablet) {
+			justify-content: start;
+		}
+	}
 
 	&__title {
 		font-weight: 500;
@@ -76,15 +106,9 @@
 
 		@include max-width($desktop) {
 			display: none;
-			// background-image: url('../images/hero/hero.png');
-			// width: 360px;
-			// height: 460px;
-			// background-repeat: no-repeat;
-			// background-size: contain;
-			// background-position: center;
-			// opacity: 0.2;
-			// object-fit: cover;
-		}
-	}
 
+		}
+
+
+	}
 }
