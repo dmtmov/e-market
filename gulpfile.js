@@ -20,6 +20,7 @@ const svgSprite = require('gulp-svg-sprite');
 const replace = require('gulp-replace');
 const cheerio = require('gulp-cheerio');
 
+
 const htmlInclude = () => {
 	return src(['app/html/*.html'])
 		.pipe(fileInclude({
