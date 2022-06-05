@@ -20,12 +20,6 @@ const replace = require('gulp-replace');
 const cheerio = require('gulp-cheerio');
 
 
-
-
-
-
-
-
 const htmlInclude = () => {
 	return src(['app/html/*.html'])
 		.pipe(fileInclude({
@@ -35,8 +29,6 @@ const htmlInclude = () => {
 		.pipe(dest('app'))
 		.pipe(browserSync.stream());
 }
-
-
 
 function browsersync() {
 	browserSync.init({
@@ -61,8 +53,6 @@ function styles() {
 		.pipe(browserSync.stream())
 }
 
-
-
 function scripts() {
 	return src([
 			'node_modules/jquery/dist/jquery.js',
@@ -79,7 +69,6 @@ function scripts() {
 		.pipe(dest('app/js'))
 		.pipe(browserSync.stream())
 }
-
 
 const svgSprites = () => {
 	return src(['app/images/svg/**.svg'])
@@ -103,8 +92,6 @@ const svgSprites = () => {
 		}))
 		.pipe(dest('app/images/'))
 }
-
-
 
 function images() {
 	return src('app/images/**/*.*')
@@ -143,7 +130,6 @@ function build() {
 function cleanDist() {
 	return del('dist')
 }
-
 
 function watching() {
 	watch(['app/scss/**/*.scss'], styles);
